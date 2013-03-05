@@ -14,6 +14,7 @@
     <AssemblyName>Italia_1213</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -95,8 +96,10 @@
     <Content Include="Fotos.aspx" />
     <Content Include="Gastenboek.aspx" />
     <Content Include="img\facebook_logo.png" />
+    <Content Include="img\map_2011.jpg" />
     <Content Include="img\vaticaan.jpg" />
     <Content Include="img\temp.jpg" />
+    <Content Include="Programma.aspx" />
     <Content Include="Startpagina.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -153,6 +156,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Programma.aspx.designer.vb">
+      <DependentUpon>Programma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Programma.aspx.vb">
+      <DependentUpon>Programma.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Startpagina.aspx.designer.vb">
       <DependentUpon>Startpagina.aspx</DependentUpon>
