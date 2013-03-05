@@ -25,6 +25,7 @@
                     <Items>
                         <asp:MenuItem NavigateUrl="~/startpagina.aspx" Text="Home"/>
                          <asp:MenuItem NavigateUrl="~/Dagverslagen.aspx" Text="Dagverslagen"/>
+                         <asp:MenuItem NavigateUrl="~/Programma.aspx" Text="Programma" />
                          <asp:MenuItem NavigateUrl="~/Fotos.aspx" Text="Foto's"/>
                         <asp:MenuItem NavigateUrl="~/Gastenboek.aspx" Text="Gastenboek"/>
                     </Items>
