@@ -86,6 +86,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\italie.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -95,6 +96,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ItaliaMasterPage.Master.designer.vb">
+      <DependentUpon>ItaliaMasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ItaliaMasterPage.Master.vb">
+      <DependentUpon>ItaliaMasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -124,6 +132,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ItaliaMasterPage.Master" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
