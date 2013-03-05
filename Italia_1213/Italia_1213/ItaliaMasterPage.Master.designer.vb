@@ -14,13 +14,13 @@ Option Explicit On
 Partial Public Class ItaliaMasterPage
 
     '''<summary>
-    '''head control.
+    '''HeadContent control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents head As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents HeadContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
 
     '''<summary>
     '''form1 control.
@@ -32,11 +32,20 @@ Partial Public Class ItaliaMasterPage
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''ContentPlaceHolder1 control.
+    '''NavigationMenu control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents ContentPlaceHolder1 As Global.System.Web.UI.WebControls.ContentPlaceHolder
+    Protected WithEvents NavigationMenu As Global.System.Web.UI.WebControls.Menu
+
+    '''<summary>
+    '''MainContent control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents MainContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
 End Class

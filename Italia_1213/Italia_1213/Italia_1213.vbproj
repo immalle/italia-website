@@ -87,6 +87,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\italie.css" />
+    <Content Include="Dagverslagen.aspx" />
+    <Content Include="Fotos.aspx" />
+    <Content Include="Gastenboek.aspx" />
+    <Content Include="img\facebook_logo.png" />
+    <Content Include="img\vaticaan.jpg" />
+    <Content Include="img\temp.jpg" />
+    <Content Include="Startpagina.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -96,6 +103,27 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dagverslagen.aspx.designer.vb">
+      <DependentUpon>Dagverslagen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dagverslagen.aspx.vb">
+      <DependentUpon>Dagverslagen.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Fotos.aspx.designer.vb">
+      <DependentUpon>Fotos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fotos.aspx.vb">
+      <DependentUpon>Fotos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Gastenboek.aspx.designer.vb">
+      <DependentUpon>Gastenboek.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gastenboek.aspx.vb">
+      <DependentUpon>Gastenboek.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="ItaliaMasterPage.Master.designer.vb">
       <DependentUpon>ItaliaMasterPage.Master</DependentUpon>
     </Compile>
@@ -121,6 +149,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Startpagina.aspx.designer.vb">
+      <DependentUpon>Startpagina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Startpagina.aspx.vb">
+      <DependentUpon>Startpagina.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

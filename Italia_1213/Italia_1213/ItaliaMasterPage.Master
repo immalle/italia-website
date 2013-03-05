@@ -4,16 +4,45 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
+    <title>Immaculata Italiëreis</title>
+    <link href="~/css/italie.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    <div class="page">
+        <div class="header">
+           
+            <div class="title">
+                <h1>
+                    <img src="img/vaticaan.jpg" alt ="vaticaan" style="width: 850px; height: 130px" />  
+                </h1>
+            </div>
+           
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/startpagina.aspx" Text="Home"/>
+                         <asp:MenuItem NavigateUrl="~/Programma.aspx" Text="Programma"/>
+                         <asp:MenuItem NavigateUrl="~/Dagverslagen.aspx" Text="Dagverslagen"/>
+                        <asp:MenuItem NavigateUrl="~/Fotos.aspx" Text="Foto's"/>
+                        <asp:MenuItem NavigateUrl="~/Gastenboek.aspx" Text="Gastenboek"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
         
-        </asp:ContentPlaceHolder>
+        </div>
+        <div class="clear">
+         
+           
+        </div>
+    </div>
+    <div class="footer">
+    
     </div>
     </form>
 </body>
