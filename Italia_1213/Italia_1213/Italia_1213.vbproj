@@ -91,6 +91,7 @@
     <Content Include="App_Data\DatabaseItalië_log.ldf">
       <DependentUpon>DatabaseItalië.mdf</DependentUpon>
     </Content>
+    <Content Include="Beheren.aspx" />
     <Content Include="css\italie.css" />
     <Content Include="Dagverslagen.aspx" />
     <Content Include="Fotos.aspx" />
@@ -110,6 +111,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Beheren.aspx.designer.vb">
+      <DependentUpon>Beheren.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beheren.aspx.vb">
+      <DependentUpon>Beheren.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Dagverslagen.aspx.designer.vb">
       <DependentUpon>Dagverslagen.aspx</DependentUpon>
     </Compile>
