@@ -96,7 +96,6 @@
     <Content Include="Dagverslagen.aspx" />
     <Content Include="Fotos.aspx" />
     <Content Include="Gastenboek.aspx" />
-    <Content Include="GastenboekBeheren.aspx" />
     <Content Include="img\facebook_logo.png" />
     <Content Include="img\map_2011.jpg" />
     <Content Include="img\vaticaan.jpg" />
@@ -138,13 +137,6 @@
     </Compile>
     <Compile Include="Gastenboek.aspx.vb">
       <DependentUpon>Gastenboek.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="GastenboekBeheren.aspx.designer.vb">
-      <DependentUpon>GastenboekBeheren.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GastenboekBeheren.aspx.vb">
-      <DependentUpon>GastenboekBeheren.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="ItaliaMasterPage.Master.designer.vb">

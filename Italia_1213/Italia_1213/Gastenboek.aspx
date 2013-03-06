@@ -5,6 +5,13 @@
 {
     margin-left:5px;
  }
+ 
+ #txtberichten
+    {
+     Width:200px;
+     Height:26px;
+     background-color:;
+     }
     
 </style>
 </asp:Content>
@@ -30,7 +37,7 @@
             
    
     <div id="berichten">
-        Naam : <asp:TextBox ID="txtNaam" runat="server" MaxLength="20" Width="200px" Height="26px" BackColor="Tan"></asp:TextBox>        
+ Naam : <asp:TextBox ID="txtNaam" runat="server" MaxLength:20;></asp:TextBox>        
         <asp:Button ID="btnToevoegen" runat="server" Height="40px" Text="Toevoegen" Width="120px" />
         <asp:Button ID="btnAnnuleren" runat="server" Height="40px" Text="Annuleren" Width="120px" />
     </div>
