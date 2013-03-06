@@ -1,0 +1,28 @@
+script maken om te exporten / pushen naar databaseserver:
+Microsoft SQL Server Database Publishing Wizard 1.1
+
+http://www.microsoft.com/en-us/download/details.aspx?id=5498
+
+Dit is een 'light'-versie van SQL Management Studio?
+
+
+
+
+
+Hoe kunnen we toegang krijgen tot onze lokale SQL Server?
+
+
+http://stackoverflow.com/questions/243583/easiest-way-to-copy-an-entire-sql-server-database-from-a-server-to-local-sql-exp
+
+
+
+
+
+
+
+hoe het .sql gegenereerd is:
+
+(via tasks-> generate scripts)
+
+zie http://stackoverflow.com/questions/3942207/how-to-backup-remote-sql-server-database-to-local-drive
+
