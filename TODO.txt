@@ -1,0 +1,17 @@
+Na 2013-03-06
+
+
+Ewoud & Axel:
+
+Foto's uploaden via Server.MapPath + mechanisme om per dag een eigen map te hebben
+
+
+Matthias & Vincent:
+
+SQL parameters
+Databank-data
+
+
+Robin & Bram:
+
+GridView/Beheer
