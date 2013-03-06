@@ -92,6 +92,7 @@
       <DependentUpon>DatabaseItalië.mdf</DependentUpon>
     </Content>
     <Content Include="Beheren.aspx" />
+    <Content Include="css\Gastenboek.css" />
     <Content Include="css\italie.css" />
     <Content Include="Dagverslagen.aspx" />
     <Content Include="Fotos.aspx" />
