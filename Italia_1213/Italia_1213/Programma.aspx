@@ -40,9 +40,10 @@
                 <td>
                 Zondag 24 maart
                 </td>
-                <b>Firenze</b><br />
+                <td><b>Firenze</b><br />
                 Voormiddag musea bezoeken.
                 Namiddag vrije winkelnamiddag.
+                </td>
                 </tr>
                 <tr>
                 <td>
