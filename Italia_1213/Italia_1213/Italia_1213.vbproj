@@ -97,6 +97,7 @@
     <Content Include="Dagverslagen.aspx" />
     <Content Include="Fotos.aspx" />
     <Content Include="FotosBeheren.aspx" />
+    <Content Include="FotosUploaden.aspx" />
     <Content Include="Gastenboek.aspx" />
     <Content Include="img\facebook_logo.png" />
     <Content Include="img\map_2011.jpg" />
@@ -140,6 +141,13 @@
     <Compile Include="FotosBeheren.aspx.vb">
       <DependentUpon>FotosBeheren.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="FotosUploaden.aspx.designer.vb">
+      <DependentUpon>FotosUploaden.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FotosUploaden.aspx.vb">
+      <DependentUpon>FotosUploaden.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Gastenboek.aspx.designer.vb">
       <DependentUpon>Gastenboek.aspx</DependentUpon>
