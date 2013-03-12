@@ -5,4 +5,7 @@
 
     End Sub
 
+    Private Sub btnBeheer_Click(sender As Object, e As System.EventArgs) Handles btnBeheer.Click
+        Response.Redirect("Nieuwsbeheren.aspx")
+    End Sub
 End Class

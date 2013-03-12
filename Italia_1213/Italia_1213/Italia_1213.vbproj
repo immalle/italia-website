@@ -99,10 +99,13 @@
     <Content Include="FotosBeheren.aspx" />
     <Content Include="FotosUploaden.aspx" />
     <Content Include="Gastenboek.aspx" />
+    <Content Include="GastenboekBeheren.aspx" />
     <Content Include="img\facebook_logo.png" />
     <Content Include="img\map_2011.jpg" />
     <Content Include="img\vaticaan.jpg" />
     <Content Include="img\temp.jpg" />
+    <Content Include="inloggen.aspx" />
+    <Content Include="NieuwsBeheren.aspx" />
     <Content Include="Programma.aspx" />
     <Content Include="Startpagina.aspx" />
     <Content Include="Web.config" />
@@ -156,6 +159,14 @@
       <DependentUpon>Gastenboek.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="GastenboekBeheren.aspx.vb">
+      <DependentUpon>GastenboekBeheren.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inloggen.aspx.vb">
+      <DependentUpon>inloggen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="ItaliaMasterPage.Master.designer.vb">
       <DependentUpon>ItaliaMasterPage.Master</DependentUpon>
     </Compile>
@@ -181,6 +192,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NieuwsBeheren.aspx.vb">
+      <DependentUpon>NieuwsBeheren.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Programma.aspx.designer.vb">
       <DependentUpon>Programma.aspx</DependentUpon>

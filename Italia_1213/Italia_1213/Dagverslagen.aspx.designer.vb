@@ -14,6 +14,15 @@ Option Explicit On
 Partial Public Class Dagverslagen
 
     '''<summary>
+    '''SqlNieuws control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SqlNieuws As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
     '''dgvOverzicht control.
     '''</summary>
     '''<remarks>
@@ -50,11 +59,65 @@ Partial Public Class Dagverslagen
     Protected WithEvents dtsDetail As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''GridView1 control.
+    '''lblnaamnieuwtje control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
+    Protected WithEvents lblnaamnieuwtje As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''txtNaam control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtNaam As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''Kalender1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents Kalender1 As Global.System.Web.UI.WebControls.Calendar
+
+    '''<summary>
+    '''txtDatum control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtDatum As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''txtNieuws control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtNieuws As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''btnToevoegen control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnToevoegen As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''btnAnnuleren control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnAnnuleren As Global.System.Web.UI.WebControls.Button
 End Class

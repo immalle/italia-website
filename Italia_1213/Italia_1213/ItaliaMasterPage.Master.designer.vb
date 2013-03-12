@@ -32,6 +32,15 @@ Partial Public Class ItaliaMasterPage
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
+    '''btnBeheer control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnBeheer As Global.System.Web.UI.WebControls.LinkButton
+
+    '''<summary>
     '''NavigationMenu control.
     '''</summary>
     '''<remarks>

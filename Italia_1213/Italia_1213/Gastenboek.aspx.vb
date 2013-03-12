@@ -41,9 +41,9 @@
 
         End If
 
-        If Session("id") = String.Empty Then
-            btnBeheer.Visible = False
-        End If
+        'If Session("id") = String.Empty Then
+        '    btnBeheer.Visible = False
+        'End If
 
 
 
