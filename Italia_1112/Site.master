@@ -1,0 +1,52 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeFile="Site.Master.vb" Inherits="Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>Immaculata Italiëreis
+        </title>
+    <link href="~/Styles/Italie.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+     
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+           
+            <div class="title">
+                <h1>
+                    <img src="Images/PICC1B5.tmp.jpg" alt ="vaticaan" style="width: 850px; height: 130px" />
+
+                        
+                </h1>
+            </div>
+           
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/startpagina.aspx" Text="Home"/>
+                         <asp:MenuItem NavigateUrl="~/Programma.aspx" Text="Programma"/>
+                         <asp:MenuItem NavigateUrl="~/Dagverslagen.aspx" Text="Dagverslagen"/>
+                        <asp:MenuItem NavigateUrl="~/Fotos.aspx" Text="Foto's"/>
+                        <asp:MenuItem NavigateUrl="~/Gastenboek.aspx" Text="Gastenboek"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        
+        </div>
+        <div class="clear">
+         
+           
+        </div>
+    </div>
+    <div class="footer">
+    
+    </div>
+    </form>
+</body>
+</html>
