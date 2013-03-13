@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/ItaliaMasterPage.Master" CodeBehind="Dagverslagen.aspx.vb" Inherits="Italia_1213.Dagverslagen" %>
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/ItaliaMasterPage.Master" CodeBehind="NieuwsToevoegen.aspx.vb" Inherits="Italia_1213.Dagverslagen" %>
 <asp:Content ID="HeaderContent" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">

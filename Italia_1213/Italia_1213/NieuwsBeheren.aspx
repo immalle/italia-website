@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Nieuws beheren" Language="VB" MasterPageFile="~/ItaliaMasterPage.Master" AutoEventWireup="false"
-    CodeFile="NieuwsBeheren.aspx.vb" Inherits="_Default" %>
+    CodeFile="NieuwsBeheren.aspx.vb" Inherits="NieuwsBeheren" %>
 
 <asp:Content ID="HeaderContent" runat="server" ContentPlaceHolderID="HeadContent"></asp:Content>
 
@@ -27,8 +27,7 @@
             <asp:Parameter name="ID" />
         </DeleteParameters>
     </asp:SqlDataSource>
-    
     <div>
-        <asp:Button ID="btnToevoegen"></asp:Button>
+        <asp:LinkButton ID="btnToevoegen" runat="server" Text="Toevoegen"></asp:LinkButton>
     </div>
 </asp:Content>
