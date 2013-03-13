@@ -28,6 +28,6 @@
         </DeleteParameters>
     </asp:SqlDataSource>
     <div>
-        <asp:LinkButton ID="btnToevoegen" runat="server" Text="Toevoegen"></asp:LinkButton>
+        <a href="NieuwsToevoegen.aspx" id="btnToevoegen"></a>
     </div>
 </asp:Content>

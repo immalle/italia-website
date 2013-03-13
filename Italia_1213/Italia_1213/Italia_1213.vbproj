@@ -129,7 +129,7 @@
     </Compile>
     <Compile Include="NieuwsToevoegen.aspx.vb">
       <DependentUpon>NieuwsToevoegen.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Fotos.aspx.designer.vb">
       <DependentUpon>Fotos.aspx</DependentUpon>
