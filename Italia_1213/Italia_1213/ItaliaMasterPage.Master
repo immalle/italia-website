@@ -28,7 +28,8 @@
                          <asp:MenuItem NavigateUrl="~/NieuwsToevoegen.aspx" Text="Dagverslagen"/>
                          <asp:MenuItem NavigateUrl="~/Programma.aspx" Text="Programma" />
                          <asp:MenuItem NavigateUrl="~/Fotos.aspx" Text="Foto's"/>
-                        <asp:MenuItem NavigateUrl="~/Gastenboek.aspx" Text="Gastenboek"/>
+                         <asp:MenuItem NavigateUrl="~/Gastenboek.aspx" Text="Gastenboek"/>
+                         <asp:MenuItem NavigateUrl="~/beheren.aspx" Text="Beheer" Enabled="True" Selectable="False" />
                     </Items>
                 </asp:Menu>
             </div>

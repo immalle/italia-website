@@ -354,6 +354,33 @@ div.menu ul li a:active
     font-size: 1em;  
 }
 
+.CalenderGeselecteerdeDag
+{
+    background-color: #8cb472;
+    font-weight: bold;
+    color:White;
+    /*werkt niet*/
+}
+.CalenderDagHoofding
+{
+    background-color: #8cb472;
+    color: White;
+    
+}
+.CalenderDagen
+{
+    color: #555;
+    /*werkt niet*/
+}
+.CalenderAndereMaand
+{
+    background-color: #6c9250;
+}
+.CalenderWeekend
+{
+    background-color: #7ba361;
+}
+
 
 /* PROGRAMMA
 -------------------------------------------------*/
