@@ -1,0 +1,462 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #8CB472;
+    font-size: .80em;
+    margin: 0px;
+    }
+
+
+
+.clear
+{
+    border-top:1px black solid;
+    text-align:center;
+    
+    
+}
+
+#btnLogin, #btnBeheer
+{
+   
+    text-decoration:none;
+    color: blue;
+    font-size:12pt;
+    font-family:Century gothic;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+}
+
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    
+    text-decoration: none;
+
+}
+
+a:active
+{
+    color: #034af3;
+    
+    
+}
+
+#lblZo
+{
+    font-size:15pt;
+    font-family:Century gothic;
+}
+p
+{
+ 
+    line-height: 1.5em;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    font-size: 12pt;
+    font-family:Century gothic;
+}
+
+#NieuwsTextbox
+{
+    font-family:century gothic;
+    font-size:12pt;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+    font-family:Century gothic;
+}
+
+h1
+{
+ 
+    font-size: 30pt;
+    height:110px;
+
+    
+}
+
+h2
+{
+    font-family:Century gothic;
+    font-size: 2.5em;
+    font-variant: small-caps;
+}
+
+h3
+{
+    font-size: 1.8em;
+    font-style:italic;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width:850px;
+    background-color: #fff;
+    margin: 0px auto 0px auto;
+    border: 1px solid black;
+  
+    
+  
+   
+}
+
+.header
+{
+    
+
+    width: 850px;
+    
+   
+    
+}
+
+.header h1
+{
+    font-weight: 800;
+    margin: 0px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 12pt;
+    margin-bottom:20px;
+    
+    
+       
+}
+
+.main
+{
+    padding: 0px 20px;
+    
+    min-height: 600;
+    text-align:justify;
+     padding: 20px 50px 10px 50px;
+    
+}
+
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#1B1B1E;
+    width:850px;
+ 
+    
+}
+
+div.menu
+{
+    padding: 10px 0px 20px 8px;
+ 
+}
+
+div.menu ul
+{
+    list-style:none;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 0px;
+    width: 100%;
+    text-align:center;
+    
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #1B1B1E;
+    border: 1px #545454 outset;
+    color: white;
+    display: block;
+    line-height: 25px;
+    white-space: nowrap;
+    font-family:Century gothic;
+    font-size:13pt;
+    text-decoration:none;
+    width:165.7px;
+    
+    
+    
+}
+
+div.menu ul li a:hover
+{
+    background-color:#3D3F45;
+    color: white;
+    text-decoration: none;
+    
+}
+
+div.menu ul li a:active
+{
+    background-color:#3D3F45;
+    text-decoration: none;
+    border:1px green solid;
+    
+}
+
+
+/* NIEUWS TOEVOEGEN GRID 
+---------------------------------------------*/
+.nieuwsgrid
+{   
+    background-color: #fff;   
+    margin: 5px 0 10px 0;   
+    padding:0px 25px 0px 25px;
+    
+}  
+.nieuwsgrid td 
+{   
+    padding: 5px;   
+    border: solid 1px #c1c1c1;   
+    color: black;   
+    
+}  
+.nieuwsgrid th    
+{
+    height: 25px;
+    text-align:center;
+    font-family:Century gothic;
+    padding: 5px;
+    color: #fff;   
+    background: #424242;
+    border-left: solid 1px #525252;   
+    font-size: 1em;   
+}  
+.nieuwsgrid1
+{   
+    background-color: #fff;   
+    margin: 5px 0 10px 0;   
+    padding:0px 25px 0px 25px;
+    
+}  
+.nieuwsgrid1 td 
+{   
+    padding: 5px;   
+    border: solid 1px #c1c1c1;   
+    color: black;   
+    
+}  
+.nieuwsgrid1 th    
+{
+    height: 25px;
+    text-align:center;
+    font-family:Century gothic;
+    padding: 5px;
+    color: #fff;   
+    background: #424242;
+    border-left: solid 1px #525252;   
+    font-size: 0.5em;   
+}  
+/* GASTENBOEK GRID
+-------------------------------------------*/
+
+.gastenboekgrid{   
+    background-color: #fff;   
+    margin: 5px 0 10px 0;   
+    padding:0px 25px 0px 25px;
+   
+}  
+.gastenboekgrid td {   
+    padding: 5px;   
+    border: solid 1px #c1c1c1;   
+    color: black;   
+    
+}  
+.gastenboekgrid th    
+{
+    height: 15px;
+    text-align:center;
+    font-family:Century gothic;
+    padding: 5px;
+    color: #fff;   
+    background: #424242;
+    border-left: solid 1px #525252;   
+    font-size: 10pt;  
+   
+}  
+
+/* Fotogrid
+----------------------------*/
+.fotogrid{   
+    background-color: #fff;   
+    margin: 5px 0 10px 0;   
+    padding:0px 25px 0px 25px;
+    
+}  
+.fotogrid td {   
+    padding: 5px;   
+    border: solid 1px #c1c1c1;   
+    color: black;   
+    
+}  
+.fotogrid th    
+{
+    height: 25px;
+    text-align:center;
+    font-family:Century gothic;
+    padding: 5px;
+    color: #fff;   
+    background: #424242;
+    border-left: solid 1px #525252;   
+    font-size: 1em;  
+}
+
+
+/* PROGRAMMA
+-------------------------------------------------*/
+#tblReisschema
+{
+  
+    padding-top:10px;
+    height: 425px;
+            }
+
+table.style1
+{
+    
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: inherit;
+    padding-bottom: 50px;
+     }
+
+        .style1
+        {
+            width: 100%;
+        
+        }
+        .style8
+        {
+           width: 175px;
+           color: #000000;
+           padding :5px 5px 5px 0px;
+           text-align:center;
+        }
+    
+        .style7
+        {
+          width: 175px;
+          padding :5px 5px 5px 5px;
+          color: #000000; 
+          text-align:center;
+        }
+td
+{
+    color: #726248;
+    text-decoration: none;
+    background-color: White;
+    font-family:Century gothic;
+    border:1px solid black;
+    font-size: 12pt;
+  }
+
+        
+#tblHotels
+{
+  
+   padding:10px 0 0px 0;
+   }
+
+        .style5
+        {
+            width: 175px;
+            color:Black;                       
+        }
+        .style9
+        {
+            color: black;
+            padding:5px 5px 5px 5px;                           
+        }
+      
+     
+        .style11
+        {
+            font-size: 15pt;
+            font-family:Verdana;
+            padding: 50px 325px 0 325px;         
+                       
+        }
+        
+         .style12
+    {
+        width: 175px;
+        color: #000000;
+        padding :5px 5px 5px 5px;
+        text-align:center; 
+    }
+        .style13
+        {
+             font-size: 15pt;
+            font-family:Verdana;
+            padding: 50px 325px 0 325px;
+            
+        }
+        .map
+        {
+            border:1px black solid;
+            margin-left:auto;
+            margin-right:auto;
+        }
+    
+            
+    #Nieuwsvak
+    {
+        color:Black;
+        padding: 5px;
+        border:0px solid black;
+    }
+    
