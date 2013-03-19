@@ -11,7 +11,34 @@ Option Strict On
 Option Explicit On
 
 
-Partial Public Class Dagverslagen
+Partial Public Class NieuwsBeheer
+
+    '''<summary>
+    '''txtTest control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents txtTest As Global.System.Web.UI.WebControls.TextBox
+
+    '''<summary>
+    '''SqlDataSource1 control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents SqlDataSource1 As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''nieuwsgrid control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents nieuwsgrid As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
     '''SqlNieuws control.
@@ -23,49 +50,13 @@ Partial Public Class Dagverslagen
     Protected WithEvents SqlNieuws As Global.System.Web.UI.WebControls.SqlDataSource
 
     '''<summary>
-    '''dgvOverzicht control.
+    '''lblNaam control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents dgvOverzicht As Global.System.Web.UI.WebControls.GridView
-
-    '''<summary>
-    '''frvDetail control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents frvDetail As Global.System.Web.UI.WebControls.FormView
-
-    '''<summary>
-    '''dtsOverzicht control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents dtsOverzicht As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''dtsDetail control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents dtsDetail As Global.System.Web.UI.WebControls.SqlDataSource
-
-    '''<summary>
-    '''lblnaamnieuwtje control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents lblnaamnieuwtje As Global.System.Web.UI.WebControls.Label
+    Protected WithEvents lblNaam As Global.System.Web.UI.WebControls.Label
 
     '''<summary>
     '''txtNaam control.
