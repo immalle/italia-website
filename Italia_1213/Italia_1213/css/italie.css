@@ -131,24 +131,24 @@ first child of the left and right table columns */
 
 .page
 {
-    width:850px;
+    width:960px; /* uitgaande van een monitorbreedte van 1024 is dit een veelgebruikte breedte */
     background-color: #fff;
     margin: 0px auto 0px auto;
     border: 1px solid black;
-  
-    
-  
-   
 }
 
-.header
-{
+.header {
     
+}
 
-    width: 850px;
+.title 
+{
+    background-image: url('../img/vaticaan.jpg');
+    background-repeat: no-repeat;
     
-   
-    
+    margin-left: auto;
+    margin-right: auto;
+    height: 130px; 
 }
 
 .header h1
@@ -159,22 +159,16 @@ first child of the left and right table columns */
     border: none;
     line-height: 2em;
     font-size: 12pt;
-    margin-bottom:20px;
-    
-    
-       
+    margin-bottom:20px;      
 }
 
 .main
 {
     padding: 0px 20px;
-    
     min-height: 600;
     text-align:justify;
-     padding: 20px 50px 10px 50px;
-    
+    padding: 20px 50px 10px 50px;
 }
-
 
 .footer
 {
@@ -191,16 +185,12 @@ first child of the left and right table columns */
 
 div.hideSkiplink
 {
-    background-color:#1B1B1E;
-    width:850px;
- 
-    
+    background-color:#1B1B1E;  
 }
 
 div.menu
 {
     padding: 10px 0px 20px 8px;
- 
 }
 
 div.menu ul
@@ -210,8 +200,7 @@ div.menu ul
     padding: 0px;
     padding-bottom: 0px;
     width: 100%;
-    text-align:center;
-    
+    text-align:center;   
 }
 
 div.menu ul li a, div.menu ul li a:visited
@@ -225,10 +214,7 @@ div.menu ul li a, div.menu ul li a:visited
     font-family:Century gothic;
     font-size:13pt;
     text-decoration:none;
-    width:165.7px;
-    
-    
-    
+    width:155px; /* breedte van [(960px / 6) - randen] */
 }
 
 div.menu ul li a:hover
