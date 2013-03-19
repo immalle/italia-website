@@ -71,4 +71,5 @@
                 <asp:ControlParameter ControlID="dgvOverzicht" Name="Datum" PropertyName="SelectedValue" Type="String" />
             </SelectParameters>
         </asp:SqlDataSource>
+    <asp:Button ID="btnLogin" runat="server" Text="Login" />
 </asp:Content>

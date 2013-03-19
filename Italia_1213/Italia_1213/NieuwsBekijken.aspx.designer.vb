@@ -57,4 +57,13 @@ Partial Public Class NieuwsBekijken1
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents dtsDetail As Global.System.Web.UI.WebControls.SqlDataSource
+
+    '''<summary>
+    '''btnLogin control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents btnLogin As Global.System.Web.UI.WebControls.Button
 End Class
