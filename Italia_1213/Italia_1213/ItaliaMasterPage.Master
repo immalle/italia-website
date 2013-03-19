@@ -16,8 +16,7 @@
            
             <div class="title">
                 <h1>
-                    <span id="btnBeheerOverzicht"><asp:LinkButton ID="btnBeheer" runat="server">Beheer</asp:LinkButton></span>
-                    <img src="img/vaticaan.jpg" alt ="vaticaan" style="width: 850px; height: 130px" />  
+                   <img src="img/vaticaan.jpg" alt ="vaticaan" style="width: 850px; height: 130px" />  
                 </h1>
             </div>
            

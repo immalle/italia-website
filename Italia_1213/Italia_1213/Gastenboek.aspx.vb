@@ -48,7 +48,8 @@
 
 
     End Sub
-    Protected Sub btnBeheer_Click(sender As Object, e As System.EventArgs) Handles btnBeheer.Click
-        Response.Redirect("default.aspx")
+
+    Private Sub btnLogin_Click(sender As Object, e As System.EventArgs) Handles btnlogin.Click
+        Response.Redirect("inloggen.aspx")
     End Sub
 End Class

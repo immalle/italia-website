@@ -53,5 +53,6 @@
         maar over de snuit van het varkentje gewreven, in Rome een muntje in de 
         Trevi-fontein gegooid en gewenst nog eens terug te komen …
         </p>
-        <p></p>
+        <br />
+        <asp:Button id="btnLogin" runat="server" Text="Login" />
 </asp:Content>

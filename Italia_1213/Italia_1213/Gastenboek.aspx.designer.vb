@@ -68,11 +68,11 @@ Partial Public Class Gastenboek
     Protected WithEvents txtBericht As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
-    '''btnBeheer control.
+    '''btnlogin control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents btnBeheer As Global.System.Web.UI.WebControls.LinkButton
+    Protected WithEvents btnlogin As Global.System.Web.UI.WebControls.Button
 End Class

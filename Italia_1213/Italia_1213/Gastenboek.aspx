@@ -32,8 +32,5 @@
         <asp:TextBox ID="txtBericht" runat="server" Height="126px" Width="453px" CssClass="TekstboxBericht" TextMode="MultiLine"></asp:TextBox></p>            
     </div>        
       
-    <div>
-        <asp:LinkButton ID="btnBeheer" runat="server">Beheer</asp:LinkButton> 
-    </div>
- 
+    <asp:Button ID="btnlogin" runat="server" Text="Login" />
     </asp:Content>
