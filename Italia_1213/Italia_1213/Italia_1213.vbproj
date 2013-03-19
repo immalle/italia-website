@@ -95,6 +95,7 @@
     <Content Include="css\Gastenboek.css" />
     <Content Include="css\italie.css" />
     <Content Include="NieuwsBeheer.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="NieuwsBekijken.aspx" />
     <Content Include="Fotos.aspx" />
     <Content Include="FotosBeheren.aspx" />
@@ -129,6 +130,11 @@
     </Compile>
     <Compile Include="NieuwsBeheer.aspx.vb">
       <DependentUpon>NieuwsBeheer.aspx</DependentUpon>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="NieuwsBekijken.aspx.designer.vb">
