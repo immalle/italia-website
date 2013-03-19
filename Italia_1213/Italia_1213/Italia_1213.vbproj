@@ -97,7 +97,6 @@
     <Content Include="Help123.aspx" />
     <Content Include="NieuwsBeheer.aspx" />
     <Content Include="NieuwsBekijken.aspx" />
-    <Content Include="NieuwsToevoegen.aspx" />
     <Content Include="Fotos.aspx" />
     <Content Include="FotosBeheren.aspx" />
     <Content Include="FotosUploaden.aspx" />
@@ -108,7 +107,6 @@
     <Content Include="img\vaticaan.jpg" />
     <Content Include="img\temp.jpg" />
     <Content Include="inloggen.aspx" />
-    <Content Include="NieuwsBeheren.aspx" />
     <Content Include="Programma.aspx" />
     <Content Include="Startpagina.aspx" />
     <Content Include="Web.config" />
@@ -132,7 +130,7 @@
     </Compile>
     <Compile Include="Help123.aspx.vb">
       <DependentUpon>Help123.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NieuwsBeheer.aspx.designer.vb">
       <DependentUpon>NieuwsBeheer.aspx</DependentUpon>
@@ -147,12 +145,6 @@
     <Compile Include="NieuwsBekijken.aspx.vb">
       <DependentUpon>NieuwsBekijken.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
-    </Compile>
-    <Compile Include="NieuwsToevoegen.aspx.designer.vb">
-      <DependentUpon>NieuwsToevoegen.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NieuwsToevoegen.aspx.vb">
-      <DependentUpon>NieuwsToevoegen.aspx</DependentUpon>
     </Compile>
     <Compile Include="Fotos.aspx.designer.vb">
       <DependentUpon>Fotos.aspx</DependentUpon>
@@ -215,9 +207,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
-    <Compile Include="NieuwsBeheren.aspx.vb">
-      <DependentUpon>NieuwsBeheren.aspx</DependentUpon>
     </Compile>
     <Compile Include="Programma.aspx.designer.vb">
       <DependentUpon>Programma.aspx</DependentUpon>
