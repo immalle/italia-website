@@ -94,6 +94,7 @@
     <Content Include="Beheren.aspx" />
     <Content Include="css\Gastenboek.css" />
     <Content Include="css\italie.css" />
+    <Content Include="NieuwsBekijken.aspx" />
     <Content Include="NieuwsToevoegen.aspx" />
     <Content Include="Fotos.aspx" />
     <Content Include="FotosBeheren.aspx" />
@@ -122,6 +123,13 @@
     </Compile>
     <Compile Include="Beheren.aspx.vb">
       <DependentUpon>Beheren.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="NieuwsBekijken.aspx.designer.vb">
+      <DependentUpon>NieuwsBekijken.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NieuwsBekijken.aspx.vb">
+      <DependentUpon>NieuwsBekijken.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="NieuwsToevoegen.aspx.designer.vb">
