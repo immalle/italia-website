@@ -94,9 +94,8 @@
     <Content Include="Beheren.aspx" />
     <Content Include="css\Gastenboek.css" />
     <Content Include="css\italie.css" />
-    <Content Include="NieuwsBeheer.aspx" />
-    <Content Include="Login.aspx" />
     <Content Include="NieuwsBekijken.aspx" />
+    <Content Include="NieuwsToevoegen.aspx" />
     <Content Include="Fotos.aspx" />
     <Content Include="FotosBeheren.aspx" />
     <Content Include="FotosUploaden.aspx" />
@@ -107,6 +106,7 @@
     <Content Include="img\vaticaan.jpg" />
     <Content Include="img\temp.jpg" />
     <Content Include="inloggen.aspx" />
+    <Content Include="NieuwsBeheren.aspx" />
     <Content Include="Programma.aspx" />
     <Content Include="Startpagina.aspx" />
     <Content Include="Web.config" />
@@ -125,24 +125,18 @@
       <DependentUpon>Beheren.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="NieuwsBeheer.aspx.designer.vb">
-      <DependentUpon>NieuwsBeheer.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="NieuwsBeheer.aspx.vb">
-      <DependentUpon>NieuwsBeheer.aspx</DependentUpon>
-    <Compile Include="Login.aspx.designer.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Login.aspx.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
-    </Compile>
     <Compile Include="NieuwsBekijken.aspx.designer.vb">
       <DependentUpon>NieuwsBekijken.aspx</DependentUpon>
     </Compile>
     <Compile Include="NieuwsBekijken.aspx.vb">
       <DependentUpon>NieuwsBekijken.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="NieuwsToevoegen.aspx.designer.vb">
+      <DependentUpon>NieuwsToevoegen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NieuwsToevoegen.aspx.vb">
+      <DependentUpon>NieuwsToevoegen.aspx</DependentUpon>
     </Compile>
     <Compile Include="Fotos.aspx.designer.vb">
       <DependentUpon>Fotos.aspx</DependentUpon>
@@ -205,6 +199,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NieuwsBeheren.aspx.vb">
+      <DependentUpon>NieuwsBeheren.aspx</DependentUpon>
     </Compile>
     <Compile Include="Programma.aspx.designer.vb">
       <DependentUpon>Programma.aspx</DependentUpon>
