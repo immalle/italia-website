@@ -23,6 +23,51 @@ Partial Public Class Programma
     Protected WithEvents imgMap As Global.System.Web.UI.WebControls.Image
 
     '''<summary>
+    '''hlRialto control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hlRialto As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''hlDonatello control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hlDonatello As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''hlCorsetti control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hlCorsetti As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''hlAstoria control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hlAstoria As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
+    '''hlMadison control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents hlMadison As Global.System.Web.UI.WebControls.HyperLink
+
+    '''<summary>
     '''btnlogin control.
     '''</summary>
     '''<remarks>

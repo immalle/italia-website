@@ -26,8 +26,8 @@
                 Ontbijten in <b>Zwitserland</b>.
                 Busreis naar de Middellandse Zee.
                 </td>
-                </tr>
-                <tr>
+             </tr>
+             <tr>
                 <td>
                 Zaterdag 23 maart
                 </td>
@@ -35,7 +35,7 @@
                 Voormiddag <b>Pisa</b> bezoeken.
                 Namiddag wandeling in <b>Firenze</b>.
                 </td>
-                </tr>
+             </tr>
                 <tr>
                 <td>
                 Zondag 24 maart
@@ -44,8 +44,8 @@
                 Voormiddag musea bezoeken.
                 Namiddag vrije winkelnamiddag.
                 </td>
-                </tr>
-                <tr>
+             </tr>
+             <tr>
                 <td>
                 Maandag 25 maart
                 </td>
@@ -53,8 +53,8 @@
                 <b>Assisi</b><br />
                 Avondmaal in <b>Rome</b>
                 </td>
-                </tr>
-                <tr>
+             </tr>
+             <tr>
                 <td>
                 Dinsdag 26 maart
                 </td>
@@ -63,8 +63,8 @@
                 Voormiddag Sint-Pietersplein en koepel bekijken.
                 Namiddag Vaticaans Museum en stadrally doorheen Rome naar het restaurant.               
                 </td>
-                </tr>
-                <tr>
+             </tr>
+             <tr>
                 <td>
                 Woensdag 27 maart
                 </td>
@@ -74,8 +74,8 @@
                 Namiddag de foro bezoeken.
                 Om 16u naar de Colloseo.
                 </td>
-                </tr>
-                <tr>
+             </tr>
+             <tr>
                 <td>
                 Donderdag 28 maart
                 </td>
@@ -84,23 +84,106 @@
                 Namiddag naar het strand.
                 Overnachten in <b>Chianciano</b>.
                 </td>
-                </tr>
-                <tr>
+             </tr>
+             <tr>
                 <td>
                 Vrijdag 29 maart
                 </td>
                 <td>Busreis met middagstop in <b>Siena</b>.
                 Overnachting in <b>Lido Di Jesolo</b>.            
                 </td>
-                </tr>
-                <tr>
+             </tr>
+             <tr>
                 <td>
                 Zaterdag 30 maart
                 </td>
                 <td>
                 <b>Venetië</b><br />
                 </td>
-                </tr>
+             </tr>
+        </table>
+
+        <table id="tblHotels" class="style1">
+            <tr>
+                <td>
+                22 en 23 maart
+                </td>
+                <td>
+                HOTEL RIALTO SUISSE***
+                <br />
+                Piazza Umberto 16 A
+                <br />
+                55043 Lido di Camaiore
+                <br />
+                tel. 0039 0584 618051
+                <br />
+                <asp:HyperLink id="hlRialto" runat="server">http://www.rialtosuisse.it/</asp:HyperLink>                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                23 tot 25 maart
+                </td>
+                <td>
+                HOTEL DONATELLO***
+                <br />
+                Piazza Indipendenza 23
+                <br />
+                50123 Firenze
+                <br />
+                tel. 0039 055 4627472
+                <br />
+                <asp:HyperLink id="hlDonatello" runat="server">http://www.hoteldonatellofirenze.com/</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                25 tot 28 maart
+                </td>
+                <td>
+                HOTEL SHANGRI'LA CORSETTI****
+                <br />
+                Via Algeria 141
+                <br />
+                00144 E.U.R. Roma (Latium)
+                <br />
+                tel. 0039 06 5916441
+                <br />
+                <asp:HyperLink id="hlCorsetti" runat="server">http://www.shangrilacorsetti.it/</asp:HyperLink>                
+                </td>
+            </tr>
+            <tr>
+                <td>
+                28 en 29 maart
+                </td>
+                <td>
+                HOTEL ASTORIA***
+                <br />
+                Via Roncacci 15
+                <br />
+                53042 chianciano Terme
+                <br />
+                tel. 0039 0578 61324
+                <br />
+                <asp:HyperLink id="hlAstoria" runat="server">http://www.albergoastoria.net/</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                29 en 30 maart
+                </td>
+                <td>
+                HOTEL MADISON***
+                <br />
+                Via Silvio Trentin 62
+                <br />
+                30016 Jesolo
+                <br/>
+                tel. 0039 0421 370806
+                <br />
+                <asp:HyperLink id="hlMadison" runat="server">http://www.hotelmadison.eu/en/</asp:HyperLink>                
+                </td>
+            </tr>
         </table>
         <asp:Button ID="btnlogin" runat="server" Text="login" />
         </asp:Content>
