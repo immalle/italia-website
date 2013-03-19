@@ -103,6 +103,7 @@
              </tr>
         </table>
 
+        <center><h3>Hotels</h3></center>
         <table id="tblHotels" class="style1">
             <tr>
                 <td>
@@ -117,7 +118,7 @@
                 <br />
                 tel. 0039 0584 618051
                 <br />
-                <asp:HyperLink id="hlRialto" runat="server">http://www.rialtosuisse.it/</asp:HyperLink>                
+                <asp:HyperLink id="hlRialto" runat="server" NavigateUrl="http://www.rialtosuisse.it/">http://www.rialtosuisse.it/</asp:HyperLink>                
                 </td>
             </tr>
             <tr>
@@ -133,7 +134,7 @@
                 <br />
                 tel. 0039 055 4627472
                 <br />
-                <asp:HyperLink id="hlDonatello" runat="server">http://www.hoteldonatellofirenze.com/</asp:HyperLink>
+                <asp:HyperLink id="hlDonatello" runat="server" NavigateUrl="http://www.hoteldonatellofirenze.com/">http://www.hoteldonatellofirenze.com/</asp:HyperLink>
                 </td>
             </tr>
             <tr>
@@ -149,7 +150,7 @@
                 <br />
                 tel. 0039 06 5916441
                 <br />
-                <asp:HyperLink id="hlCorsetti" runat="server">http://www.shangrilacorsetti.it/</asp:HyperLink>                
+                <asp:HyperLink id="hlCorsetti" runat="server" NavigateUrl="http://www.shangrilacorsetti.it/">http://www.shangrilacorsetti.it/</asp:HyperLink>                
                 </td>
             </tr>
             <tr>
@@ -165,7 +166,7 @@
                 <br />
                 tel. 0039 0578 61324
                 <br />
-                <asp:HyperLink id="hlAstoria" runat="server">http://www.albergoastoria.net/</asp:HyperLink>
+                <asp:HyperLink id="hlAstoria" runat="server" NavigateUrl="http://www.albergoastoria.net/">http://www.albergoastoria.net/</asp:HyperLink>
                 </td>
             </tr>
             <tr>
@@ -181,7 +182,7 @@
                 <br/>
                 tel. 0039 0421 370806
                 <br />
-                <asp:HyperLink id="hlMadison" runat="server">http://www.hotelmadison.eu/en/</asp:HyperLink>                
+                <asp:HyperLink id="hlMadison" runat="server" NavigateUrl="http://www.hotelmadison.eu/en/">http://www.hotelmadison.eu/en/</asp:HyperLink>                
                 </td>
             </tr>
         </table>
