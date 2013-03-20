@@ -36,24 +36,6 @@
      <br />
 
      <asp:FormView ID="frvDetail" runat="server" DataKeyNames="Datum" DataSourceID="dtsDetail" RenderOuterTable="False">
-        <EditItemTemplate>
-            <asp:Label ID="DatumLabel1" runat="server" Text='<%# Eval("Datum") %>' />
-            <br />
-            <asp:TextBox ID="NieuwsTextBox" runat="server" ForeColor="black" Text='<%# Bind("Nieuws") %>' />
-            <br />
-            <asp:LinkButton ID="UpdateButton" runat="server" CausesValidation="True" CommandName="Update" Text="Update" />
-            <asp:LinkButton ID="UpdateCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-        </EditItemTemplate>
-
-        <InsertItemTemplate>
-            <asp:TextBox ID="DatumTextBox" runat="server"  Text='<%# Bind("Datum") %>' />
-            <br />
-            <asp:TextBox ID="NieuwsTextBox" runat="server" Text='<%# Bind("Nieuws") %>' />
-            <br />
-            <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insert" />
-            <asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancel" />
-         </InsertItemTemplate>
-                        
          <ItemTemplate>
             <asp:Label ID="DatumLabel" runat="server" forecolor="black" Text='<%# Eval("Datum") %>' />
             <br />
@@ -63,6 +45,7 @@
          </ItemTemplate>
     </asp:FormView>
         <br />
+
         <asp:SqlDataSource ID="dtsOverzicht" runat="server" ConnectionString="<%$ ConnectionStrings:ItaliaConnection %>" 
             SelectCommand="SELECT Datum FROM tblNieuws"></asp:SqlDataSource>
         <asp:SqlDataSource ID="dtsDetail" runat="server" ConnectionString="<%$ ConnectionStrings:ItaliaConnection %>" 
