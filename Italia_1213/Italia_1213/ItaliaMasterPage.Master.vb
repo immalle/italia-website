@@ -4,7 +4,7 @@
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         NavigationMenu.Items.Clear()
 
-        Dim homeItem = New MenuItem("Home", "", "", "~/Startpagina.aspx")
+        Dim homeItem = New MenuItem("Home", "", "", "~/Default.aspx")
         Dim dagverslagenItem = New MenuItem("Dagverslagen", "", "", "~/NieuwsBekijken.aspx")
         Dim programmaItem = New MenuItem("Programma", "", "", "~/Programma.aspx")
         Dim fotoItem = New MenuItem("Foto's", "", "", "~/Fotos.aspx")

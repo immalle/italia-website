@@ -33,7 +33,7 @@ Public Class Login
         sqlConn.Close()
 
         If Session("id") Then
-            Response.Redirect("Startpagina.aspx")
+            Response.Redirect("Default.aspx")
         Else
             lgnAanmelden.FailureText = "Foutieve aanmelding. Probeer nogmaals!"
         End If

@@ -129,7 +129,7 @@
     <Content Include="img\vaticaan.jpg" />
     <Content Include="img\temp.jpg" />
     <Content Include="Programma.aspx" />
-    <Content Include="Startpagina.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -246,11 +246,11 @@
       <DependentUpon>Programma.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
-    <Compile Include="Startpagina.aspx.designer.vb">
-      <DependentUpon>Startpagina.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Startpagina.aspx.vb">
-      <DependentUpon>Startpagina.aspx</DependentUpon>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
