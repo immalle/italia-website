@@ -115,6 +115,7 @@
     <Content Include="jqueryui\js\jquery-1.9.1.js" />
     <Content Include="jqueryui\js\jquery-ui-1.10.2.custom.js" />
     <Content Include="jqueryui\js\jquery-ui-1.10.2.custom.min.js" />
+    <Content Include="Login.aspx" />
     <Content Include="NieuwsBeheer.aspx" />
     <Content Include="NieuwsBekijken.aspx" />
     <Content Include="Fotos.aspx" />
@@ -126,7 +127,6 @@
     <Content Include="img\map_2011.jpg" />
     <Content Include="img\vaticaan.jpg" />
     <Content Include="img\temp.jpg" />
-    <Content Include="inloggen.aspx" />
     <Content Include="Programma.aspx" />
     <Content Include="Startpagina.aspx" />
     <Content Include="Web.config" />
@@ -150,6 +150,13 @@
     </Compile>
     <Compile Include="Help123.aspx.vb">
       <DependentUpon>Help123.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="NieuwsBeheer.aspx.designer.vb">
@@ -196,10 +203,6 @@
     </Compile>
     <Compile Include="GastenboekBeheren.aspx.vb">
       <DependentUpon>GastenboekBeheren.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="inloggen.aspx.vb">
-      <DependentUpon>inloggen.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ItaliaMasterPage.Master.designer.vb">

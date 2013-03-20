@@ -23,12 +23,12 @@
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
-                        <asp:MenuItem NavigateUrl="~/startpagina.aspx" Text="Home"/>
+                         <asp:MenuItem NavigateUrl="~/startpagina.aspx" Text="Home"/>
                          <asp:MenuItem NavigateUrl="~/NieuwsBekijken.aspx" Text="Dagverslagen"/>
                          <asp:MenuItem NavigateUrl="~/Programma.aspx" Text="Programma" />
                          <asp:MenuItem NavigateUrl="~/Fotos.aspx" Text="Foto's"/>
                          <asp:MenuItem NavigateUrl="~/Gastenboek.aspx" Text="Gastenboek"/>
-                         <asp:MenuItem NavigateUrl="~/beheren.aspx" Text="Beheer" Enabled="True" Selectable="False" />
+                         <asp:MenuItem NavigateUrl="~/Login.aspx" Text="Inloggen"/>
                     </Items>
                 </asp:Menu>
             </div>
