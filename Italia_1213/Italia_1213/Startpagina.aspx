@@ -54,5 +54,4 @@
         Trevi-fontein gegooid en gewenst nog eens terug te komen …
         </p>
         <br />
-        <asp:Button id="btnLogin" runat="server" Text="Login" />
 </asp:Content>

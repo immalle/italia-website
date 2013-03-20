@@ -5,8 +5,4 @@
 
     End Sub
 
-    Private Sub btnLogin_Click(sender As Object, e As System.EventArgs) Handles btnLogin.Click
-        Response.Redirect("Login.aspx")
-    End Sub
-
 End Class

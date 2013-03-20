@@ -23,7 +23,6 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Button ID="btnLogin" runat="server" Text="Login" />
     <div><p>Kies een datum</p></div>
     <div><asp:ListBox ID="ListBox1" runat="server" AutoPostBack="true" ></asp:ListBox></div>
     <div id="fotoview" runat="server">

@@ -19,12 +19,6 @@
                 ListBox1.Items.Add(s)
             End While
         End If
-
-
-    End Sub
-
-    Private Sub btnLogin_Click(sender As Object, e As System.EventArgs) Handles btnLogin.Click
-        Response.Redirect("Login.aspx")
     End Sub
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As System.EventArgs) Handles ListBox1.SelectedIndexChanged

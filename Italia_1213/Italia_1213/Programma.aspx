@@ -203,5 +203,4 @@
                 </td>
             </tr>
         </table>
-        <asp:Button ID="btnlogin" runat="server" Text="login" />
         </asp:Content>
