@@ -3,4 +3,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <asp:Button ID="btnLogin" runat="server" Text="Login" />
+
+    <div id="fotoview">
+        
+    </div>
 </asp:Content>
