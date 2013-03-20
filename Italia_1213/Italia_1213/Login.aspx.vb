@@ -37,5 +37,10 @@ Public Class Login
         Else
             lgnAanmelden.FailureText = "Foutieve aanmelding. Probeer nogmaals!"
         End If
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> Login en Logout page
     End Sub
 End Class

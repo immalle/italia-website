@@ -116,6 +116,7 @@
     <Content Include="jqueryui\js\jquery-ui-1.10.2.custom.js" />
     <Content Include="jqueryui\js\jquery-ui-1.10.2.custom.min.js" />
     <Content Include="Login.aspx" />
+    <Content Include="Logout.aspx" />
     <Content Include="NieuwsBeheer.aspx" />
     <Content Include="NieuwsBekijken.aspx" />
     <Content Include="Fotos.aspx" />
@@ -158,6 +159,13 @@
     <Compile Include="Login.aspx.vb">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.vb">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="NieuwsBeheer.aspx.designer.vb">
       <DependentUpon>NieuwsBeheer.aspx</DependentUpon>
