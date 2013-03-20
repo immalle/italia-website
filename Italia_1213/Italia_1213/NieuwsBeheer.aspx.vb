@@ -16,7 +16,7 @@
         'strSQL &= "Values ('" & txtNaam.Text & "','" & txtNieuws.Text & "','" & txtDatum.Text & "')"
 
         SqlNieuws.InsertCommand = "INSERT INTO tblNieuws(Naam, Nieuws, Datum) VALUES(@naam, @nieuws, @datum)"
-        SqlNieuws.InsertParameters.Add("datum", DbType.Date, Kalender1.SelectedDate.ToString)
+        SqlNieuws.InsertParameters.Add("datum", DbType.DateTime, Kalender1.SelectedDate.ToString)
         SqlNieuws.InsertParameters.Add("naam", DbType.String, txtNaam.Text)
         SqlNieuws.InsertParameters.Add("nieuws", DbType.String, txtNieuws.Text)
 

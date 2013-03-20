@@ -37,12 +37,14 @@
          </ItemTemplate>
     </asp:FormView>
 
-        <asp:SqlDataSource ID="dtsOverzicht" runat="server" ConnectionString="<%$ ConnectionStrings:ItaliaConnection %>" 
-            SelectCommand="SELECT Datum FROM tblNieuws"></asp:SqlDataSource>
-        <asp:SqlDataSource ID="dtsDetail" runat="server" ConnectionString="<%$ ConnectionStrings:ItaliaConnection %>" 
-            SelectCommand="SELECT [Datum], [Nieuws] FROM [tblNieuws] WHERE ([Datum] = @Datum)">
-            <SelectParameters>
-                <asp:ControlParameter ControlID="dgvOverzicht" Name="Datum" PropertyName="SelectedValue" Type="String" />
-            </SelectParameters>
-        </asp:SqlDataSource>
+    <asp:SqlDataSource ID="dtsOverzicht" runat="server" ConnectionString="<%$ ConnectionStrings:ItaliaConnection %>" 
+        SelectCommand="SELECT Datum FROM tblNieuws">
+    </asp:SqlDataSource>
+        
+    <asp:SqlDataSource ID="dtsDetail" runat="server" ConnectionString="<%$ ConnectionStrings:ItaliaConnection %>" 
+        SelectCommand="SELECT [Datum], [Nieuws] FROM [tblNieuws] WHERE ([Datum] = @Datum)">
+        <SelectParameters>
+            <asp:ControlParameter ControlID="dgvOverzicht" Name="Datum" PropertyName="SelectedValue" Type="DateTime" />
+        </SelectParameters>
+    </asp:SqlDataSource>
 </asp:Content>
