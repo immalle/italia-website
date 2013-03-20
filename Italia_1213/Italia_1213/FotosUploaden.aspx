@@ -8,7 +8,6 @@
             DatePicker.datepicker('option',
                     {
                         dateFormat: 'yy-mm-dd',
-                        numberOfMonths: [1, 2],
                         showWeek: 'true'
                     }); 
         });
