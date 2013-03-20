@@ -6,6 +6,9 @@
 <head runat="server">
     <title>Immaculata Italiëreis</title>
     <link href="~/css/italie.css" rel="stylesheet" type="text/css" />
+    <link href="jqueryui/css/ui-lightness/jquery-ui-1.10.2.custom.css" rel="stylesheet">
+	<script src="jqueryui/js/jquery-1.9.1.js"></script>
+	<script src="jqueryui/js/jquery-ui-1.10.2.custom.js"></script>
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
