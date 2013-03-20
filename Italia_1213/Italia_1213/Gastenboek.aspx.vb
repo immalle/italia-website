@@ -20,15 +20,11 @@
     End Sub
 
     Protected Sub Page_Load(sender As Object, e As System.EventArgs) Handles Me.Load
-        If gastenboekgrid.Rows.Count = 0 Then
-            gastenboekgrid.Visible = False
-        Else
-            gastenboekgrid.Visible = True
-            gastenboekgrid.Columns(0).ItemStyle.Width = 90
-            gastenboekgrid.Columns(1).ItemStyle.Width = 215
-            gastenboekgrid.Columns(2).ItemStyle.Width = 60
-
-        End If
+        
+        gastenboekgrid.Visible = True
+        gastenboekgrid.Columns(0).ItemStyle.Width = 90
+        gastenboekgrid.Columns(1).ItemStyle.Width = 215
+        gastenboekgrid.Columns(2).ItemStyle.Width = 60
 
         'If Session("id") = String.Empty Then
         '    btnBeheer.Visible = False
