@@ -25,7 +25,7 @@ Public Class Login
         scnnLogin.Close()
 
         If Not strID = String.Empty Then
-            FormsAuthentication.RedirectFromLoginPage(lgnAanmelden.UserName, False)
+            Response.Redirect("Startpagina.aspx")
         Else
             lgnAanmelden.FailureText = "Foutieve aanmelding. Probeer nogmaals!"
         End If
