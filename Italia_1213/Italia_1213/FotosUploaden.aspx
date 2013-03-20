@@ -3,7 +3,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
     <script type="text/javascript">
         $(document).ready(function () {
-            $('.jqueryDatepicker').datepicker();
+            var DatePicker = $('.jqueryDatepicker').datepicker();
+
+            DatePicker.datepicker('option',
+                    {
+                        dateFormat: 'yy-mm-dd',
+                        numberOfMonths: [1, 2],
+                        showWeek: 'true'
+                    }); 
         });
     </script>
 </asp:Content>

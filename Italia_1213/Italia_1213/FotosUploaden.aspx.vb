@@ -11,8 +11,7 @@
         Dim strPad As String = Server.MapPath("uploads\" & strBestandsnaam)
         fupUpload.PostedFile.SaveAs(strPad)
 
-        Date.TryParse(textCalender.Text, datum)
-
+        Date.TryParseExact(textCalender.Text, "yyyy-MM-dd", Nothing, Globalization.DateTimeStyles.None, datum)
         sqlDatasource.InsertCommand = "INSERT INTO tblFotos (Naam,Dag) VALUES (@bestandsnaam,@datum)"
         sqlDatasource.InsertParameters.Add("bestandsnaam", DbType.String, strBestandsnaam)
         sqlDatasource.InsertParameters.Add("datum", DbType.Date, datum.ToString)
