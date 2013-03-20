@@ -5,30 +5,37 @@ Public Class Login
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
     End Sub
     Protected Sub lgnAanmelden_Authenticate(ByVal sender As Object, ByVal e As System.Web.UI.WebControls.AuthenticateEventArgs) Handles lgnAanmelden.Authenticate
-        Dim scnnLogin As New SqlConnection
-        Dim scmdGebruiker As New SqlCommand
-        Dim strID As String
+        Dim sqlConn As New SqlConnection
+        Dim sqlCmd As New SqlCommand
+        Dim loginString As String
 
-        scnnLogin.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings("ItaliaConnection").ToString
+        sqlConn.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings("ItaliaConnection").ToString
 
-        scmdGebruiker.Connection = scnnLogin
-        scmdGebruiker.CommandText = "select ID from tblAccounts where (Gebruikersnaam='" & lgnAanmelden.UserName & "' and Wachtwoord='" & lgnAanmelden.Password & "')"
+        sqlCmd.Connection = sqlConn
+        'sqlCmd.CommandText = "select ID from tblAccounts where (Gebruikersnaam='" & lgnAanmelden.UserName & "' and Wachtwoord='" & lgnAanmelden.Password & "')"
 
-        scnnLogin.Open()
+        sqlCmd.CommandText = "select ID from tblAccounts where Gebruikersnaam=@gebruikersnaam and Wachtwoord=@wachtwoord"
+        sqlCmd.Parameters.Add("gebruikersnaam", SqlDbType.VarChar)
+        sqlCmd.Parameters.Add("wachtwoord", SqlDbType.VarChar)
+        sqlCmd.Parameters.Item("gebruikersnaam").Value = lgnAanmelden.UserName
+        sqlCmd.Parameters.Item("wachtwoord").Value = lgnAanmelden.Password
 
-        If scmdGebruiker.ExecuteScalar Is Nothing Then
-            strID = String.Empty 'Niet ingelogd
+        sqlConn.Open()
+
+        If sqlCmd.ExecuteScalar Is Nothing Then
+            loginString = String.Empty 'Niet ingelogd
         Else
-            strID = scmdGebruiker.ExecuteScalar.ToString
+            loginString = sqlCmd.ExecuteScalar.ToString
         End If
-        Session("id") = strID
-        scnnLogin.Close()
 
-        If Not strID = String.Empty Then
+        Session("id") = loginString
+
+        sqlConn.Close()
+
+        If Session("id") Then
             Response.Redirect("Startpagina.aspx")
         Else
             lgnAanmelden.FailureText = "Foutieve aanmelding. Probeer nogmaals!"
         End If
-
     End Sub
 End Class
