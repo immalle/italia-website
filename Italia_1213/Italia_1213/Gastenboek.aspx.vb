@@ -4,30 +4,19 @@
     Sub Leegmaken()
         txtNaam.Text = String.Empty
         txtBericht.Text = String.Empty
-
     End Sub
-
 
     Protected Sub btnAnnuleren_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnAnnuleren.Click
         Me.Leegmaken()
-
     End Sub
 
     Protected Sub btnToevoegen_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnToevoegen.Click
-        Dim strSQL As String
-        Dim dteDatum As DateTime
-        dteDatum = DateTime.Now
-        strSQL = "Insert into tblGastenboek(Naam, Bericht, Datum)"
-        strSQL &= "Values ('" & txtNaam.Text & "','" & txtBericht.Text & "','" & dteDatum.ToString & "')"
-
-        SqlNieuws.InsertCommand = strSQL
+        SqlNieuws.InsertCommand = "INSERT INTO tblGastenboek(Naam, Bericht, Datum) Values (@Naam, @Bericht, @Datum)"
+        SqlNieuws.InsertParameters.Add("Naam", DbType.String, txtNaam.Text)
+        SqlNieuws.InsertParameters.Add("Bericht", DbType.String, txtBericht.Text)
+        SqlNieuws.InsertParameters.Add("Datum", DbType.Date, DateTime.Now.ToString)
         SqlNieuws.Insert()
-
-
-
-
         Leegmaken()
-
     End Sub
 
     Protected Sub Page_Load(sender As Object, e As System.EventArgs) Handles Me.Load
