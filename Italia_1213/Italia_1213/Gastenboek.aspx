@@ -5,7 +5,7 @@
    <h2>Gastenboek</h2>
 
   <asp:GridView ID="gastenboekgrid" runat="server" 
-        AutoGenerateColumns="False"  Width="750px" 
+        AutoGenerateColumns="False"  Width="100%" 
         cssclass="gastenboekgrid" DataSourceID="SqlNieuws" 
         AllowPaging="True">
       <Columns>

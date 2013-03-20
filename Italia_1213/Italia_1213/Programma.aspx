@@ -3,7 +3,7 @@
     <h2> Programma </h2>
         <br />
         <br />
-        <asp:Image ID="imgMap" class="map" runat="server" ImageUrl="~/img/map_2011.jpg" Height="800px" Width="750px" ImageAlign="Middle" />
+        <asp:Image ID="imgMap" class="map" runat="server" ImageUrl="~/img/map_2011.jpg" Height="800px" Width="100%" ImageAlign="Middle" />
 
         <center><h3>Dagprogramma</h3></center>
         <table id="tblReisschema" class="style1">

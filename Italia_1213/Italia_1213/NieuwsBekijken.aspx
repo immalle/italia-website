@@ -15,7 +15,7 @@
     </asp:SqlDataSource>
 
     <asp:GridView ID="dgvOverzicht" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Datum" DataSourceID="dtsOverzicht" 
-      Font-Size="25pt" ForeColor="black" CellPadding="4" GridLines="None" Height="25px" Width="748px" CssClass="nieuwsgrid1">
+      Font-Size="25pt" ForeColor="black" CellPadding="4" GridLines="None" Height="25px" Width="100%" CssClass="nieuwsgrid1">
 
         <AlternatingRowStyle BackColor="White" />
         <Columns>
