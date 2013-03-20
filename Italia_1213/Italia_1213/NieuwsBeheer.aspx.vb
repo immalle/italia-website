@@ -1,6 +1,13 @@
 ﻿Public Class NieuwsBeheer
     Inherits System.Web.UI.Page
 
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Session("id") = String.Empty Then
+            Response.Redirect("~/Default.aspx")
+        End If
+    End Sub
+
     Sub Leegmaken()
         txtNaam.Text = String.Empty
         txtNieuws.Text = String.Empty
@@ -25,11 +32,6 @@
 
 
         Leegmaken()
-    End Sub
-
-
-    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-
     End Sub
 
     Protected Sub Kalender1_SelectionChanged(sender As Object, e As System.EventArgs) Handles Kalender1.SelectionChanged
