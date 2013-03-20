@@ -14,13 +14,13 @@ Option Explicit On
 Partial Public Class FotosUploaden
 
     '''<summary>
-    '''calDatum control.
+    '''textCalender control.
     '''</summary>
     '''<remarks>
     '''Auto-generated field.
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
-    Protected WithEvents calDatum As Global.System.Web.UI.WebControls.Calendar
+    Protected WithEvents textCalender As Global.System.Web.UI.WebControls.TextBox
 
     '''<summary>
     '''fupUpload control.
