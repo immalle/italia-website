@@ -12,7 +12,8 @@
                 Donderdag 21 maart
                 </td>      
                 <td>
-                <b>Vertrek naar Italië</b><br />
+                <b>Vertrek naar Italië</b>
+                <br />
                 Verzamelen aan de Notelaar om 23:30u.
                 </td> 
             </tr>
@@ -21,9 +22,12 @@
                 Vrijdag 22 Maart
                 </td>
                 <td>
-                <b>De reis</b><br />
+                <b>De reis</b>
+                <br />
                 Vertrek om 00:00u.
+                <br />
                 Ontbijten in <b>Zwitserland</b>.
+                <br />
                 Busreis naar de Middellandse Zee.
                 </td>
              </tr>
@@ -33,6 +37,7 @@
                 </td>
                 <td>
                 Voormiddag <b>Pisa</b> bezoeken.
+                <br />
                 Namiddag wandeling in <b>Firenze</b>.
                 </td>
              </tr>
@@ -40,8 +45,10 @@
                 <td>
                 Zondag 24 maart
                 </td>
-                <td><b>Firenze</b><br />
+                <td><b>Firenze</b>
+                <br />
                 Voormiddag musea bezoeken.
+                <br />
                 Namiddag vrije winkelnamiddag.
                 </td>
              </tr>
@@ -50,7 +57,8 @@
                 Maandag 25 maart
                 </td>
                 <td>
-                <b>Assisi</b><br />
+                <b>Assisi</b>
+                <br />
                 Avondmaal in <b>Rome</b>
                 </td>
              </tr>
@@ -59,9 +67,11 @@
                 Dinsdag 26 maart
                 </td>
                 <td>
-                <b>Vaticaan</b><br />
+                <b>Vaticaan</b>
+                <br />
                 Voormiddag Sint-Pietersplein en koepel bekijken.
-                Namiddag Vaticaans Museum en stadrally doorheen Rome naar het restaurant.               
+                <br />
+                Namiddag Vaticaans Museum en stadrally doorheen Rome naar het restaurant.             
                 </td>
              </tr>
              <tr>
@@ -69,9 +79,12 @@
                 Woensdag 27 maart
                 </td>
                 <td>
-                <b>Oud Rome</b><br />
+                <b>Oud Rome</b>
+                <br />
                 Voormiddag de thermen en het circus bezoeken.
+                <br />
                 Namiddag de foro bezoeken.
+                <br />
                 Om 16u naar de Colloseo.
                 </td>
              </tr>
@@ -81,7 +94,9 @@
                 </td>
                 <td>
                 Voormiddag in <b>Ostia Antica</b>.
+                <br />
                 Namiddag naar het strand.
+                <br />
                 Overnachten in <b>Chianciano</b>.
                 </td>
              </tr>
@@ -90,6 +105,7 @@
                 Vrijdag 29 maart
                 </td>
                 <td>Busreis met middagstop in <b>Siena</b>.
+                <br />
                 Overnachting in <b>Lido Di Jesolo</b>.            
                 </td>
              </tr>
@@ -98,7 +114,8 @@
                 Zaterdag 30 maart
                 </td>
                 <td>
-                <b>Venetië</b><br />
+                <b>Venetië</b>
+                <br />
                 </td>
              </tr>
         </table>
@@ -162,7 +179,7 @@
                 <br />
                 Via Roncacci 15
                 <br />
-                53042 chianciano Terme
+                53042 Chianciano Terme
                 <br />
                 tel. 0039 0578 61324
                 <br />
