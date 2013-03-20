@@ -12,6 +12,7 @@
         Dim loginItem = New MenuItem("Inloggen", "", "", "~/Login.aspx")
         Dim dagverslagenbeheerItem = New MenuItem("Dagverslagen beheer", "", "", "~/NieuwsBeheer.aspx")
         Dim fotobeheerItem = New MenuItem("Foto's beheer", "", "", "~/FotosBeheren.aspx")
+        Dim fotouploadItem = New MenuItem("Upload Foto", "", "", "~/FotosUploaden.aspx")
         Dim gastenboekbeheerItem = New MenuItem("Gastenboek beheer", "", "", "~/GastenboekBeheren.aspx")
         Dim logoutItem = New MenuItem("Logout", "", "", "~/Logout.aspx")
 
@@ -31,6 +32,7 @@
             NavigationMenu.Items.Add(logoutItem)
             NavigationMenu.Items.Add(dagverslagenbeheerItem)
             NavigationMenu.Items.Add(fotobeheerItem)
+            NavigationMenu.Items.Add(fotouploadItem)
             NavigationMenu.Items.Add(gastenboekbeheerItem)
         End If
     End Sub
