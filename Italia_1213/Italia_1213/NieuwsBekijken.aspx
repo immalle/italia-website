@@ -28,15 +28,14 @@
 
      <asp:FormView ID="frvDetail" runat="server" DataKeyNames="Datum" DataSourceID="dtsDetail" RenderOuterTable="False">
          <ItemTemplate>
-         <div>
-         </div>
+         <p>
             <asp:Label ID="DatumLabel" runat="server" forecolor="black" Text='<%# Eval("Datum") %>' />
-         <div>
+         </p>
+         <p>
             <asp:Label ID="NieuwsLabel" runat="server" ForeColor="Black"  Text='<%# Eval("Nieuws").ToString().replace(Chr(13), "<br />") %>' />
-         </div>
+         </p>
          </ItemTemplate>
     </asp:FormView>
-
 
         <asp:SqlDataSource ID="dtsOverzicht" runat="server" ConnectionString="<%$ ConnectionStrings:ItaliaConnection %>" 
             SelectCommand="SELECT Datum FROM tblNieuws"></asp:SqlDataSource>

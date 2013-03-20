@@ -6,21 +6,16 @@ body
     background: #8CB472;
     font-size: .80em;
     margin: 0px;
-    }
-
-
+}
 
 .clear
 {
     border-top:1px black solid;
-    text-align:center;
-    
-    
+    text-align:center;  
 }
 
 #btnLogin, #btnBeheer
 {
-   
     text-decoration:none;
     color: blue;
     font-size:12pt;
@@ -31,24 +26,19 @@ body
     padding-top: 25px;
 }
 
-
 a:link, a:visited
 {
     color: #034af3;
 }
 
 a:hover
-{
-    
+{   
     text-decoration: none;
-
 }
 
 a:active
 {
     color: #034af3;
-    
-    
 }
 
 #lblZo
@@ -56,9 +46,9 @@ a:active
     font-size:15pt;
     font-family:Century gothic;
 }
+
 p
-{
- 
+{ 
     line-height: 1.5em;
     background-color: #fff;
     margin: 20px auto 0px auto;
