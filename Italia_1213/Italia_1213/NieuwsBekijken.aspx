@@ -4,16 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h2> Dagverslagen</h2>
 
-    <asp:SqlDataSource ID="SqlNieuws" Runat="server"
-        SelectCommand="SELECT [ID],[Naam], [Nieuws], [Datum] FROM [tblNieuws]"
-        Deletecommand="DELETE FROM tblNieuws WHERE ID = @ID"
-        UpdateCommand="Update tblNieuws SET Naam=@Naam, Nieuws=@Nieuws WHERE ID=@ID"
-        ConnectionString="<%$ ConnectionStrings:ItaliaConnection %>" >
-        <DeleteParameters>
-            <asp:Parameter name="ID" />
-        </DeleteParameters>
-    </asp:SqlDataSource>
-
+    <div>
     <asp:GridView ID="dgvOverzicht" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="Datum" DataSourceID="dtsOverzicht" 
       Font-Size="25pt" ForeColor="black" CellPadding="4" GridLines="None" Height="25px" Width="100%" CssClass="nieuwsgrid1">
 
@@ -33,18 +24,19 @@
         <SortedDescendingCellStyle BackColor="#E9EBEF" />
         <SortedDescendingHeaderStyle BackColor="#4870BE" />
      </asp:GridView>
-     <br />
+     </div>
 
      <asp:FormView ID="frvDetail" runat="server" DataKeyNames="Datum" DataSourceID="dtsDetail" RenderOuterTable="False">
          <ItemTemplate>
+         <div>
+         </div>
             <asp:Label ID="DatumLabel" runat="server" forecolor="black" Text='<%# Eval("Datum") %>' />
-            <br />
-            <br />
+         <div>
             <asp:Label ID="NieuwsLabel" runat="server" ForeColor="Black"  Text='<%# Eval("Nieuws").ToString().replace(Chr(13), "<br />") %>' />
-            <br />
+         </div>
          </ItemTemplate>
     </asp:FormView>
-        <br />
+
 
         <asp:SqlDataSource ID="dtsOverzicht" runat="server" ConnectionString="<%$ ConnectionStrings:ItaliaConnection %>" 
             SelectCommand="SELECT Datum FROM tblNieuws"></asp:SqlDataSource>
