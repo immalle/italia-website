@@ -39,4 +39,22 @@ Partial Public Class FotosBeheren
     '''To modify move field declaration from designer file to code-behind file.
     '''</remarks>
     Protected WithEvents btnMultipleRowDelete As Global.System.Web.UI.WebControls.Button
+
+    '''<summary>
+    '''lblLijstServerFotos control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lblLijstServerFotos As Global.System.Web.UI.WebControls.Label
+
+    '''<summary>
+    '''lsbBestandenOpServer control.
+    '''</summary>
+    '''<remarks>
+    '''Auto-generated field.
+    '''To modify move field declaration from designer file to code-behind file.
+    '''</remarks>
+    Protected WithEvents lsbBestandenOpServer As Global.System.Web.UI.WebControls.ListBox
 End Class
