@@ -20,9 +20,28 @@
         Width="750px" CssClass="nieuwsgrid">
         <Columns>
             <asp:BoundField DataField="Naam" HeaderText="Naam" SortExpression="Naam" />
-            <asp:BoundField DataField="Nieuws" HeaderText="Nieuws" SortExpression="Nieuws" />
+            <asp:TemplateField HeaderText="Nieuws" SortExpression="Nieuws">
+                <EditItemTemplate>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="130px" 
+                        Text='<%# Bind("Nieuws") %>' TextMode="MultiLine" Width="386px"></asp:TextBox>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:Label ID="Label1" runat="server" Text='<%# Bind("Nieuws") %>'></asp:Label>
+                </ItemTemplate>
+            </asp:TemplateField>
             <asp:CommandField ShowDeleteButton="True" />
-            <asp:CommandField ShowEditButton="true" />
+            <asp:TemplateField ShowHeader="False">
+                <EditItemTemplate>
+                    <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="True" 
+                        CommandName="Update" Text="Bevestingen"></asp:LinkButton>
+                    <asp:LinkButton ID="LinkButton2" runat="server" CausesValidation="False" 
+                        CommandName="Cancel" Text="Annuleren"></asp:LinkButton>
+                </EditItemTemplate>
+                <ItemTemplate>
+                    <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" 
+                        CommandName="Edit" Text="Bewerken"></asp:LinkButton>
+                </ItemTemplate>
+            </asp:TemplateField>
         </Columns>
     </asp:GridView>
 
