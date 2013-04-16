@@ -15,14 +15,13 @@
 
             While dr.Read()
                 Dim s As Date = Date.Parse(dr("Dag"))
-
-                ListBox1.Items.Add(s)
+                DropDownList1.Items.Add(s)
             End While
         End If
     End Sub
 
-    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As System.EventArgs) Handles ListBox1.SelectedIndexChanged
-        Dim selectedDate As Date = Date.Parse(ListBox1.SelectedValue)
+    Private Sub DropDownList1_SelectedIndexChanged(sender As Object, e As System.EventArgs) Handles DropDownList1.SelectedIndexChanged
+        Dim selectedDate As Date = Date.Parse(DropDownList1.SelectedValue)
         Dim sqlConnection As New SqlClient.SqlConnection()
         sqlConnection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings("ItaliaConnection").ToString()
 
@@ -41,7 +40,6 @@
                 img.CssClass = "img"
                 fotoview.Controls.Add(img)
             Else
-
             End If
         End While
     End Sub
