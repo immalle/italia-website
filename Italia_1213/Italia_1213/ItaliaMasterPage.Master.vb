@@ -22,14 +22,14 @@
         NavigationMenu.Items.Add(fotoItem)
         NavigationMenu.Items.Add(gastenboekItem)
 
-        If Session("id") Then
+        If Session("id") = String.Empty Then
+            NavigationMenu.Items.Add(loginItem)
+        Else
             NavigationMenu.Items.Add(logoutItem)
             NavigationMenu.Items.Add(dagverslagenbeheerItem)
             NavigationMenu.Items.Add(fotobeheerItem)
             NavigationMenu.Items.Add(fotouploadItem)
             NavigationMenu.Items.Add(gastenboekbeheerItem)
-        Else
-            NavigationMenu.Items.Add(loginItem)
         End If
     End Sub
 End Class
