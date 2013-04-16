@@ -11,7 +11,7 @@
         <AlternatingRowStyle BackColor="White" />
         <Columns>
                 <asp:CommandField SelectText="Lees verslag van " ShowSelectButton="True" />
-                <asp:BoundField DataField="Datum" HeaderText="Datum" ReadOnly="True" SortExpression="Datum" />
+                <asp:BoundField DataField="Datum" HeaderText="Datum" ReadOnly="True" SortExpression="Datum" DataFormatString="{0:d}" />
         </Columns>
         <EditRowStyle BackColor="#2461BF" />
         <FooterStyle BackColor="#507CD1" Font-Bold="True" ForeColor="White" />

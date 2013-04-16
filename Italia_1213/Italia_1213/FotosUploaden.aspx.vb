@@ -16,7 +16,7 @@
         Date.TryParseExact(textCalender.Text, "yyyy-MM-dd", Nothing, Globalization.DateTimeStyles.None, datum)
         sqlDatasource.InsertCommand = "INSERT INTO tblFotos (Naam,Dag) VALUES (@bestandsnaam,@datum)"
         sqlDatasource.InsertParameters.Add("bestandsnaam", DbType.String, strBestandsnaam)
-        sqlDatasource.InsertParameters.Add("datum", DbType.Date, datum.ToString)
+        sqlDatasource.InsertParameters.Add("datum", DbType.DateTime, datum.ToString)
 
         sqlDatasource.Insert()
     End Sub

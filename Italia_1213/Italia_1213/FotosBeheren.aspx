@@ -9,7 +9,7 @@
       cssclass= "fotogrid" DataKeyNames="ID" DataSourceID="DtsOverzicht" 
         Width="750px">
         <Columns>
-            <asp:BoundField DataField="Dag" HeaderText="Dag" SortExpression="Dag" />
+            <asp:BoundField DataField="Dag" HeaderText="Dag" SortExpression="Dag" DataFormatString="{0:d}" />
             <asp:BoundField DataField="Naam" HeaderText="Naam" />
             <asp:CommandField ShowDeleteButton="True" />
         </Columns>    

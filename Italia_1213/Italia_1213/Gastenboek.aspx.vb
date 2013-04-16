@@ -14,7 +14,7 @@
         SqlNieuws.InsertCommand = "INSERT INTO tblGastenboek(Naam, Bericht, Datum) Values (@Naam, @Bericht, @Datum)"
         SqlNieuws.InsertParameters.Add("Naam", DbType.String, txtNaam.Text)
         SqlNieuws.InsertParameters.Add("Bericht", DbType.String, txtBericht.Text)
-        SqlNieuws.InsertParameters.Add("Datum", DbType.Date, DateTime.Now.ToString)
+        SqlNieuws.InsertParameters.Add("Datum", DbType.DateTime, DateTime.Now.ToString)
         SqlNieuws.Insert()
         Leegmaken()
     End Sub
