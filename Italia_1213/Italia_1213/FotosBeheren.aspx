@@ -25,4 +25,8 @@
     </asp:SqlDataSource>
  
     <asp:Button ID="btnMultipleRowDelete" runat="server" Text="Delete Rows" Visible="False" />
+    <asp:Label ID="lblLijstServerFotos" runat="server" Text="Hier is een lijstje van foto's op de server: "></asp:Label>
+    <div id="LijstBestandenOpServer">
+    <asp:ListBox ID="lsbBestandenOpServer" runat="server"></asp:ListBox>
+    </div>
 </asp:Content>
