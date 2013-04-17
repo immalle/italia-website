@@ -357,6 +357,12 @@ div.menu ul li a:active
     background-color: #7ba361;
 }
 
+#MainContent_DatumFoto
+{
+    font-size: 1.2em;
+    font-family: Century gothic;
+
+}
 
 /* PROGRAMMA
 -------------------------------------------------*/

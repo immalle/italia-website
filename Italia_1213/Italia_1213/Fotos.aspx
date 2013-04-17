@@ -24,7 +24,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div><p>Kies een datum</p></div>
-    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" ></asp:DropDownList>
+    <ul id="DatumsFotos" runat="server">
+        
+    </ul>
     <div id="fotoview" runat="server">
     </div>
 </asp:Content>
