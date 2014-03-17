@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css' />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+</head>
+<body>
+        <header id="wrapHeader">
+        <div id="menu">
+            <div id="title">IMMACULATA</div>
+            <nav>
+                <ul id="menuList">
+                    <li class="@(@ViewContext.RouteData.GetRequiredString("action") == "Index" ? "current_page" : "")">@Html.ActionLink("Home", "Index", "Italia")</li>
+                    <li class="@(@ViewContext.RouteData.GetRequiredString("action") == "Dagverslagen" ? "current_page" : "")">@Html.ActionLink("Dagverslagen", "Dagverslagen", "Italia")</li>
+                    <li class="@(@ViewContext.RouteData.GetRequiredString("action") == "Programma" ? "current_page" : "")">@Html.ActionLink("Programma", "Programma", "Italia")</li>
+                    <li class="@(@ViewContext.RouteData.GetRequiredString("action") == "Fotos" ? "current_page" : "")">@Html.ActionLink("Foto's", "Fotos", "Italia")</li>
+                    <li class="@(@ViewContext.RouteData.GetRequiredString("action") == "Gastenboek" ? "current_page" : "")">@Html.ActionLink("Gastenboek", "Gastenboek", "Italia")</li>
+                </ul>
+            </nav>
+            
+        </div>
+        <div id="pageTitle">
+            @{string pageName = ViewBag.Title;}
+                <span style="color: #eeaf34">@pageName.First()</span>@pageName.Substring(1)
+            </div>
+    </header>
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿@model ItalieNieuw.Models.Reaction
+@{
+    ViewBag.Title = "Gastenboek";
+}
+
+<table>
+    <thead>
+        <tr>
+            <td style="text-decoration: underline;">Naam</td>
+            <td style="text-decoration: underline;">Bericht</td>
+            <td style="text-decoration: underline;">Datum</td>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in (List<ItalieNieuw.Models.Reaction>)ViewData["Reactions"])
+{
+    <tr>
+        <td>@item.Name</td>
+        <td>@item.Message</td>
+        <td>@item.Date</td>
+    </tr>
+}
+</tbody>
+</table>
+
+@using (@Html.BeginForm("AddReaction", "Italia", FormMethod.Post)) {
+<div>@Html.LabelFor(model => model.Name)</div>
+<div>@Html.EditorFor(model => model.Name)</div>
+<div>@Html.LabelFor(model => model.Message)</div>
+<div>@Html.TextAreaFor(model => model.Message)</div>
+<input type="submit" value="Voeg toe" />}

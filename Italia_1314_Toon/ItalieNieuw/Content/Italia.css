@@ -1,0 +1,85 @@
+﻿body {
+    margin: auto;
+    margin-top: 10px;
+    width: 1024px;
+    background-color: #d3d3d3;
+    overflow: scroll;
+}
+
+a, a:visited, a:hover {
+    color: white;
+    font-size: 24px;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: -15px;
+}
+
+
+
+#wrapHeader {  
+    position: relative; 
+    width: 100%;
+    height: 420px;
+    background-image: url("/Pictures/ItaliëPicture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#menu {   
+    position: relative;
+    text-align: center;
+    height: 125px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#title {    
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+#menu ul li {    
+    margin: 35px;
+    list-style-type: none;
+    display: inline;
+    color: white;
+    font-size: 24px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: center;    
+}
+
+#pageTitle {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    text-align: left;
+    text-indent: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 28px;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+}
+
+#content {
+    width: 960px;
+    margin: auto;
+    margin-top: 25px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#magic-line { 
+    top: 20px;
+    position: absolute;
+    background-color: #eeaf34;
+    width: 100px;
+    height: 4px;
+}
+
+
