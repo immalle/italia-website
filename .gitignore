@@ -1,6 +1,5 @@
 # Build and Object Folders
-# blijkbaar is de bin-directory toch nodig voor asp.net dependencies
-#bin/
+bin/
 obj/
 
 #User Specific Files
