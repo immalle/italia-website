@@ -15,6 +15,18 @@ TODO:
 
 
 
+#problemen met syncen van github#
+
+Als het bouwen niet werkt, kan het zijn dat de packages niet goed mee ingecheckt zijn in GitHub.
+
+Dit kan dat oplossen:
+
+- Install-Package EntityFramework
+- Install-Package Microsoft.AspNet.Web.Optimization
+
+
+
+
 #Requirements#
 
 ##Anonieme gebruikers (iedereen)##
@@ -29,5 +41,11 @@ TODO:
 ##Administrator##
 
 1. Inloggen
-2.  
+2. Dagverslagen toevoegen
+3. Dagverslagen bewerken
+4. Foto's uploaden
+5. Foto's verwijderen / verbergen
+6. Gastenboek-entries verwijderen
+
+
  
