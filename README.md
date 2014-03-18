@@ -14,3 +14,20 @@ TODO:
 	- SQL Databank exploreren
 
 
+
+#Requirements#
+
+##Anonieme gebruikers (iedereen)##
+
+1. Algemene informatie kunnen lezen (vgl. HOME-pagina)
+2. Programma raadplegen
+3. Dagverslagen kunnen lezen
+4. Foto's kunnen bekijken
+	- hoe organiseerd? Per dag?
+5. Een gastenboek-entry maken
+
+##Administrator##
+
+1. Inloggen
+2.  
+ 
