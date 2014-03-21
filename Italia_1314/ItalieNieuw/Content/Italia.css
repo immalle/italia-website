@@ -81,5 +81,12 @@ nav {
     width: 100px;
     height: 4px;
 }
+#tblReisschema {
+    border:2px grey;
+}
+#MainContent_imgMap {
+    border-radius:2px;
+    border:2px grey;
+}
 
 
