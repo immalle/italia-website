@@ -23,7 +23,7 @@
         }
             // date is still good
         else {
-            days = 0; hours = 0; mins = 0; secs = 0; out = "";
+            days = 0; hours = 0; mins = 0; secs = 0; outDays = ""; outHours = ""; outMins = ""; outSecs = "";;
 
             amount = Math.floor(amount / 1000);//kill the "milliseconds" so just secs
 
@@ -38,11 +38,14 @@
 
             secs = Math.floor(amount);//seconds
 
-            if (days != 0) { out += days + " day" + ((days != 1) ? "s" : "") + ", "; }
-            if (days != 0 || hours != 0) { out += hours + " hour" + ((hours != 1) ? "s" : "") + ", "; }
-            if (days != 0 || hours != 0 || mins != 0) { out += mins + " minute" + ((mins != 1) ? "s" : "") + ", "; }
-            out += secs + " seconds";
-            document.getElementById('countbox').innerHTML = out;
+            if (days != 0) { outDays += days + " day" + ((days != 1) ? "s" : "") + ", "; }
+            if (days != 0 || hours != 0) { outHours += hours + " hour" + ((hours != 1) ? "s" : "") + ", "; }
+            if (days != 0 || hours != 0 || mins != 0) { outMins += mins + " minute" + ((mins != 1) ? "s" : "") + ", "; }
+            outSecs += secs + " seconds";
+            document.getElementById('countboxDays').innerHTML = outDays;
+            document.getElementById('countboxHours').innerHTML = outHours;
+            document.getElementById('countboxMins').innerHTML = outMins;
+            document.getElementById('countboxSecs').innerHTML = outSecs;
 
             setTimeout("GetCount()", 1000);
         }
@@ -52,6 +55,10 @@
 
     //-->
     </script>
-    <div style="width:150px;height:100px; background-size:cover;color:GrayText;font-size:20px;text-align:center;font-weight:bold;" id="countbox"></div>
+    <div id="countboxDays"></div>
+    <div id="countboxHours"></div>
+     <div id="countboxMins"></div>
+     <div id="countboxSecs"></div>
+     
 </body>
 </html>
