@@ -2,6 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
+    
+	<style type="text/css">
+	    #countbox {
+	        font-family: 'Agency FB';
+	        font-size: 40px;
+	        text-align: center;
+	        margin-top: 250px;
+	    }
+
+		
+	</style>
 </head>
 <body>
     <script type="text/javascript">
@@ -38,9 +49,9 @@
 
             secs = Math.floor(amount);//seconds
 
-            if (days != 0) { outDays += days + " day" + ((days != 1) ? "s" : "") + ", "; }
-            if (days != 0 || hours != 0) { outHours += hours + " hour" + ((hours != 1) ? "s" : "") + ", "; }
-            if (days != 0 || hours != 0 || mins != 0) { outMins += mins + " minute" + ((mins != 1) ? "s" : "") + ", "; }
+            if (days != 0) { outDays += days + " day" + ((days != 1) ? "s" : ""); }
+            if (days != 0 || hours != 0) { outHours += hours + " hour" + ((hours != 1) ? "s" : "") ; }
+            if (days != 0 || hours != 0 || mins != 0) { outMins += mins + " minute" + ((mins != 1) ? "s" : "") ; }
             outSecs += secs + " seconds";
             document.getElementById('countboxDays').innerHTML = outDays;
             document.getElementById('countboxHours').innerHTML = outHours;
@@ -55,10 +66,14 @@
 
     //-->
     </script>
-    <div id="countboxDays"></div>
-    <div id="countboxHours"></div>
-     <div id="countboxMins"></div>
-     <div id="countboxSecs"></div>
+    <div id="countbox">
+        <div id="countboxDays"></div>
+        <div id="countboxHours"></div>   
+        <div id="countboxMins"></div>
+        <div id="countboxSecs"></div>
+    </div>
+    
+    
      
 </body>
 </html>
