@@ -23,6 +23,12 @@ namespace ItalieNieuw.Models
             return View();
         }
 
+        public ActionResult GetDagverslag(int id = 0) 
+        {
+            var query = (from verslag in db.DailyReport where verslag.Id == id select verslag).ToList();
+            return Json(query, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult Programma()
         {
             return View();

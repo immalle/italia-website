@@ -82,4 +82,6 @@ nav {
     height: 4px;
 }
 
-
+#dagverslagenTabel {
+    border-bottom: solid 2px #ccc;
+}
