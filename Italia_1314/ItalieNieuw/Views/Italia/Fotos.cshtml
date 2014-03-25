@@ -1,5 +1,17 @@
-﻿@{
-    ViewBag.Title = "Foto's";
-}
+﻿@{ViewBag.Title="Foto's";}
+@using (Html.BeginForm("Fotos", "Italia", FormMethod.Post, new { enctype = "multipart/form-data" })) 
+{ 
+     <input type="file" name="file" />
+    <input type="submit" value="OK" />     
+}   
+    
+   
 
-<h2>Foto's</h2>
+
+
+<h3>Onze Foto's:</h3>
+
+        <img src="~/Images/ImageUploads/image1.jpg" style="width:200px" height="200"/>
+        <img src="~/Images/ImageUploads/image2.jpg" style="width:200px" height="200"/>
+        <img src="~/Images/ImageUploads/image3.jpg" style="width:200px" height="200" />
+        <img src="~/Images/ImageUploads/image4.jpg" style="width:200px" height="200" />

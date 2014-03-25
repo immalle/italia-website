@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace FileUploadTest.Models
+namespace ItalieNieuw.Models
 {
     public class Foto
     {
@@ -11,6 +11,6 @@ namespace FileUploadTest.Models
         public String Naam { get; set; }
         public DateTime UploadDatum { get; set; }
         public String Pad { get; set; }
-        public String Beschrijving { get; set; }
+        public String Beschrijving { get; set; } 
     }
 }

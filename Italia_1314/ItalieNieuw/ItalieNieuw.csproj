@@ -136,6 +136,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DailyReports.cs" />
+    <Compile Include="Models\Foto.cs" />
     <Compile Include="Models\ItaliaDb.cs" />
     <Compile Include="Models\Reaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -237,6 +238,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Images\ImageUploads\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
