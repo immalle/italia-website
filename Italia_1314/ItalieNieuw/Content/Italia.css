@@ -90,6 +90,11 @@ nav {
     width: 55%;
 }
 
+
+#dagverslagenTabel {
+    border-bottom: solid 2px #ccc;
+}
+
 #MainContent_imgMap {
     float: left;
     width: 40%;
@@ -110,6 +115,7 @@ nav {
    text-align:center; 
 }
 
+<<<<<<< HEAD
     #tblReisschema td{
         border-bottom: 1px dashed grey;
         text-align:center; 
@@ -120,3 +126,6 @@ nav {
     #tblReisschema b {
         font-style: italic;
     }
+=======
+>>>>>>> b778aae4c93e9cff771d96cde80be57030dd39c4
+>>>>>>> aa27c7cffe3fd480778e31a1ceec37a4a96eecdb
