@@ -1,11 +1,12 @@
 ﻿$(document).ready(function () {
+    var $vorigElement;
     var getDagInfo = function (marker) {
+        if ($vorigElement == null) { } else {$vorigElement.css({ 'background-color': '#ccc' });};
 
-
-
-
-        alert(marker.id);
-
+        var id = marker.id + 1;
+        console.log(id);
+        $("html, body").animate({ scrollTop: $(document).height() }, 1000);        
+        $vorigElement = $('#' + id).css({ 'background-color': '#B0B0B0' });
     };
 
 var locations = [
