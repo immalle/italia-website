@@ -2,13 +2,34 @@
 @{
     ViewBag.Title = "Dagverslagen";
 }
+<<<<<<< HEAD
 
+
+=======
+@Scripts.Render("~/bundles/dagverslag")
 <h2>Dagverslagen</h2>
+>>>>>>> aa27c7cffe3fd480778e31a1ceec37a4a96eecdb
 
 <div>
-@foreach (var item in (List<ItalieNieuw.Models.DailyReports>)ViewData["DailyReports"])
-{
-    
-    @item.Title @Html.Raw(" ") @item.Date
-}
+    <table id="dagverslagenTabel">
+        <thead>
+            <tr>
+                <td>Titel</td>
+                <td>Datum</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in (List<ItalieNieuw.Models.DailyReports>)ViewData["DailyReports"])
+            {
+                <tr>
+                    <td class="title" data-it-action="@Url.Action("GetDagverslag")" data-it-id="@item.Id">@item.Title</td>
+                    <td>@item.Date</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div id="dagDetails">
+
+    </div>
 </div>

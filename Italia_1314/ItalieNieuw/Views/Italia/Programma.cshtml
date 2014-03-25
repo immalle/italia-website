@@ -1,21 +1,16 @@
 ﻿@{
     ViewBag.Title = "Programma";
 }
-@* Google Map *@
-<head> 
-    <title></title>
-  <script 
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwR00spLnTnri0jSsHcHtOtuoCL3gsmok&sensor=true"
-          type="text/javascript"></script>
-</head> 
-    
 
-  
+    
+  <div id="map" style="width: 100%; height: 600px;"></div>
+  @Scripts.Render("~/Scripts/googleMap.js")
 
 @* Oude Map *@
 
-<h2>Programma</h2>
+<br />
 <img id="MainContent_imgMap" class="map" src="~/Images/map_2014.jpg">
+
 <table id="tblReisschema">
             <tbody><tr>
                 <td>
@@ -38,7 +33,7 @@
                 Maandag 31 Maart
                 </td>
                 <td>
-                    <br />
+                    
                 <b>De reis</b>
                 <br>
              Vertrek om 00:00u.
@@ -55,7 +50,7 @@
                 Dinsdag 1 April
                 </td>
                 <td>
-                <br /> Voormiddag <b>Pisa</b> bezoeken.
+                 Voormiddag <b>Pisa</b> bezoeken.
                 <br>
                 Namiddag wandeling in <b>Firenze</b>.
                    
@@ -69,7 +64,7 @@
                 </td>
                    
                 <td>
-                    <br /><b>Firenze</b>
+                    <b>Firenze</b>
                 <br>
                 Voormiddag musea bezoeken.
                 <br>
@@ -84,7 +79,7 @@
                 Donderdag 3 April
                 </td>
                 <td>
-                    <br />
+                    
                 <b>Assisi</b>
                 <br>
                 Avondmaal in <b>Rome</b>
@@ -98,12 +93,12 @@
                 Vrijdag 4 April
                 </td>
                 <td>
-                    <br />
+                    
                 <b>Vaticaan</b>
                 <br>
                 Voormiddag Sint-Pietersplein en koepel bekijken.
                 <br>
-                Namiddag Vaticaans Museum en stadrally doorheen Rome naar het restaurant.
+                Namiddag Vaticaans Museum <br> en stadrally doorheen Rome naar het restaurant.
                      
                            
                 </td>
@@ -114,7 +109,7 @@
                 Zaterdag 5 April
                 </td>
                 <td>
-                    <br />
+                   
                 <b>Oud Rome</b>
                 <br>
                 Voormiddag de thermen en het circus bezoeken.
@@ -132,7 +127,7 @@
                 Zondag 6 April
                 </td>
                 <td>
-                <br />Voormiddag in <b>Ostia Antica</b>.
+                Voormiddag in <b>Ostia Antica</b>.
                 <br>
                 Namiddag naar het strand.
                 <br>
@@ -146,7 +141,7 @@
                     <br />
                 Maandag 7 April
                 </td>
-                <td><br />Busreis met middagstop in <b>Siena</b>.
+                <td>Busreis met middagstop in <b>Siena</b>.
                 <br>
                 Overnachting in <b>Lido Di Jesolo</b>.  
                     

@@ -13,7 +13,7 @@ namespace ItalieNieuw.Models
         }
 
         public DbSet<Reaction> Reaction { get; set; }
-        public DbSet<DailyReports> DailyReport { get; set; }
+        public DbSet<DailyReport> DailyReport { get; set; }
 
     }
 }

@@ -6,11 +6,10 @@ using System.Web;
 
 namespace ItalieNieuw.Models
 {
-    public class DailyReports
+    public class DailyReport
     {
         public int Id { get; set; }
-        // TODO : Datum anders weergeven.
-        [DisplayFormat(DataFormatString = "{0:dddd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        // TODO : Datum anders weergeven. SOLVED
         public DateTime Date { get; set; }
         public String Report { get; set; }
         public String Title { get; set; }
