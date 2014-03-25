@@ -20,8 +20,8 @@ namespace ItalieNieuw.Models
 
         public ActionResult Dagverslagen()
         {
-            ViewData["DailyReport"] = db.DailyReport.ToList();
-            return View();
+           var query = (from dagv in db.DailyReport select dagv).ToList();
+            return View(query);
         }
 
         public ActionResult GetDagverslag(int id = 0) 
@@ -32,8 +32,16 @@ namespace ItalieNieuw.Models
 
         public ActionResult Programma()
         {
-            return View();
+            var query = (from dp in db.DailyProgram select dp).ToList();
+            return View(query);
         }
+
+        public ActionResult GetDagprogramma(int id = 0) 
+        {
+            var query = (from dagp in db.DailyProgram where dagp.Id == id select dagp).ToList();
+            return Json(query, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult Fotos()
         {
             return View();

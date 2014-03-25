@@ -14,6 +14,7 @@ namespace ItalieNieuw.Models
 
         public DbSet<Reaction> Reaction { get; set; }
         public DbSet<DailyReport> DailyReport { get; set; }
+        public DbSet<DailyProgram> DailyProgram { get; set; }
 
     }
 }

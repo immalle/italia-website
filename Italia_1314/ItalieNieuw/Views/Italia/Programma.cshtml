@@ -1,8 +1,9 @@
-﻿@{
+﻿@model IEnumerable<ItalieNieuw.Models.DailyProgram>
+@{
     ViewBag.Title = "Programma";
 }
 
-    
+    <br />
   <div id="map" style="width: 100%; height: 600px;"></div>
   @Scripts.Render("~/Scripts/googleMap.js")
 
@@ -12,13 +13,23 @@
 <img id="MainContent_imgMap" class="map" src="~/Images/map_2014.jpg">
 
 <table id="tblReisschema">
-            <tbody><tr>
-                <td>
-                Zondag 30 maart
-                </td>      
-                <td>
-                  
-                <b>Vertrek naar Italië</b>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Date.ToShortDateString()</td>
+                        <td><span class="bold">@item.Title</span> <br />
+                            @{string info = @item.Info;}                                             
+                            @foreach (char c in info)
+                            {
+                                if (c == '|') { @Html.Raw("<br />") } else {@Html.Raw(c)}
+                            }
+                        </td>
+                    </tr>
+                }
+                <tr>
+                    <td>Zondag 30 maart</td>      
+                <td><b>Vertrek naar Italië</b>
                 <br>
                 Verzamelen aan de Notelaar om 23:30u.
                

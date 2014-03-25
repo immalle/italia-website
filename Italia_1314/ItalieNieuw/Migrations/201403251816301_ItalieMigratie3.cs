@@ -3,7 +3,7 @@ namespace ItalieNieuw.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class ItaliaMigration1 : DbMigration
+    public partial class ItalieMigratie3 : DbMigration
     {
         public override void Up()
         {

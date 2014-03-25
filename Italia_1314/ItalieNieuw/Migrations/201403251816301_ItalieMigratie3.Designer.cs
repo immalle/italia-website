@@ -5,13 +5,13 @@ namespace ItalieNieuw.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    public sealed partial class ItaliaMigration1 : IMigrationMetadata
+    public sealed partial class ItalieMigratie3 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(ItaliaMigration1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(ItalieMigratie3));
         
         string IMigrationMetadata.Id
         {
-            get { return "201402161903112_ItaliaMigration1"; }
+            get { return "201403251816301_ItalieMigratie3"; }
         }
         
         string IMigrationMetadata.Source

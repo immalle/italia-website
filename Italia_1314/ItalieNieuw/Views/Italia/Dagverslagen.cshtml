@@ -1,14 +1,14 @@
-﻿@model ItalieNieuw.Models.DailyReports
+﻿@model IEnumerable<ItalieNieuw.Models.DailyReport>
 @{
     ViewBag.Title = "Dagverslagen";
 }
-<<<<<<< HEAD
 
 
-=======
+
+
 @Scripts.Render("~/bundles/dagverslag")
 <h2>Dagverslagen</h2>
->>>>>>> aa27c7cffe3fd480778e31a1ceec37a4a96eecdb
+
 
 <div>
     <table id="dagverslagenTabel">
@@ -19,7 +19,7 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var item in (List<ItalieNieuw.Models.DailyReports>)ViewData["DailyReports"])
+            @foreach (var item in Model)
             {
                 <tr>
                     <td class="title" data-it-action="@Url.Action("GetDagverslag")" data-it-id="@item.Id">@item.Title</td>

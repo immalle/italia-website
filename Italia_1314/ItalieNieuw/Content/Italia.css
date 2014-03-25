@@ -138,3 +138,7 @@ textarea {
     width: 1021px;
     height: 101px;
 }
+
+.bold {
+    font-weight: bold;
+}
