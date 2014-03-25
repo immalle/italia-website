@@ -19,6 +19,7 @@ Als het bouwen niet werkt (CTRL-SHIFT-B), kan het zijn dat bepaalde packages nie
 	- gewone, oude kaart	
 	- Google MAPS kaart?
 	- tabel met uitleg
+	- bij vorige jaren stond ook informatie over de hotels op deze pagina (dit jaar ook?)
 3. Dagverslagen lezen
 	- hoe scrollen tussen dagen?
 		- horizontaal?
