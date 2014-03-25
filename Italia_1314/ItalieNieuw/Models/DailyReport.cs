@@ -6,7 +6,7 @@ using System.Web;
 
 namespace ItalieNieuw.Models
 {
-    public class DailyReports
+    public class DailyReport
     {
         public int Id { get; set; }
         // TODO : Datum anders weergeven. SOLVED
