@@ -82,11 +82,23 @@ nav {
     height: 4px;
 }
 #tblReisschema {
-    border:2px grey;
-}
-#MainContent_imgMap {
-    border-radius:2px;
-    border:2px grey;
+    border:5px solid grey;
+    float:right;
+    text-align:center;
+    margin:5px;
+    width:55%;
 }
 
+#MainContent_imgMap {
+    float:left;
+    width:40%;
+    height:80%;
+}
+#GoogleMap {
+    border-radius:2px;
+    border:2px grey;
+    float:left;
+    width:40%;
+    height:80%;
+}
 
