@@ -81,7 +81,30 @@ nav {
     width: 100px;
     height: 4px;
 }
+#tblReisschema {
+    border:5px solid grey;
+    float:right;
+    text-align:center;
+    margin:5px;
+    width:55%;
+}
 
+<<<<<<< HEAD
 #dagverslagenTabel {
     border-bottom: solid 2px #ccc;
 }
+=======
+#MainContent_imgMap {
+    float:left;
+    width:40%;
+    height:80%;
+}
+#GoogleMap {
+    border-radius:2px;
+    border:2px grey;
+    float:left;
+    width:40%;
+    height:80%;
+}
+
+>>>>>>> b778aae4c93e9cff771d96cde80be57030dd39c4

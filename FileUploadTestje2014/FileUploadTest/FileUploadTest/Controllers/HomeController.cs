@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 using System.Web.Mvc;
 
@@ -22,11 +23,25 @@ namespace FileUploadTest.Controllers
             // Verify that the user selected a file
             if (file != null && file.ContentLength > 0)
             {
-                // extract only the fielname
+                // extract only the filename
                 var fileName = Path.GetFileName(file.FileName);
-                // store the file inside ~/App_Data/uploads folder
-                var path = Path.Combine("C:/Users/dan.buze/Desktop", fileName);
+                // store the file inside the right folder
+                var path = Path.Combine(Server.MapPath("~/ImageUploads/"), fileName);
                 file.SaveAs(path);
+
+                //Regex reg = new Regex(@"image(\d)+[.]");
+
+                //var list = Directory.GetFiles(fileName, "*.jpg").Where(path => reg.IsMatch(path))
+                //         .ToList();
+
+                //if (list.Count == 0)
+                //    return "image1.jpg";
+
+                //var lastName =
+                //    list.Select(x => (new FileInfo(x)).Name.Replace("image", "").Replace(".jpg", "")).OrderBy(x => x).Last();
+
+                //string.Format("image{0}.png", int.Parse(lastName) + 1);
+
                 
                 
                 
