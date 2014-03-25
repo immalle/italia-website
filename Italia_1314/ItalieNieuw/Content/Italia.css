@@ -22,8 +22,8 @@ nav {
 
 
 
-#wrapHeader {  
-    position: relative; 
+#wrapHeader {
+    position: relative;
     width: 100%;
     height: 420px;
     background-image: url("/Pictures/ItaliëPicture.jpg");
@@ -31,28 +31,28 @@ nav {
     background-size: cover;
 }
 
-#menu {   
+#menu {
     position: relative;
     text-align: center;
     height: 125px;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-#title {    
+#title {
     color: white;
     font-family: 'Titillium Web', sans-serif;
     font-size: 32px;
     font-weight: bolder;
 }
 
-#menu ul li {    
+#menu ul li {
     margin: 35px;
     list-style-type: none;
     display: inline;
     color: white;
     font-size: 24px;
     font-family: 'Titillium Web', sans-serif;
-    text-align: center;    
+    text-align: center;
 }
 
 #pageTitle {
@@ -74,31 +74,49 @@ nav {
     font-family: 'Titillium Web', sans-serif;
 }
 
-#magic-line { 
+#magic-line {
     top: 20px;
     position: absolute;
     background-color: #eeaf34;
     width: 100px;
     height: 4px;
 }
+
 #tblReisschema {
-    border:5px solid grey;
-    float:right;
-    text-align:center;
-    margin:5px;
-    width:55%;
+    border: 5px solid grey;
+    float: right;
+    text-align: center;
+    margin: 5px;
+    width: 55%;
 }
 
 #MainContent_imgMap {
-    float:left;
-    width:40%;
-    height:80%;
-}
-#GoogleMap {
-    border-radius:2px;
-    border:2px grey;
-    float:left;
-    width:40%;
-    height:80%;
+    float: left;
+    width: 40%;
+    height: 80%;
 }
 
+#GoogleMap {
+    border-radius: 2px;
+    border: 2px grey;
+    float: left;
+    width: 40%;
+    height: 80%;
+}
+
+
+#tblReisschema {
+    font-family: 'Titillium Web', sans-serif;
+   text-align:center; 
+}
+
+    #tblReisschema td{
+        border-bottom: 1px dashed grey;
+        text-align:center; 
+        vertical-align:middle;
+
+    }
+
+    #tblReisschema b {
+        font-style: italic;
+    }
