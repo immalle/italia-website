@@ -204,6 +204,7 @@
     <Content Include="License\TextFile1.txt" />
     <Content Include="Pictures\ItaliëPicture.jpg" />
     <Content Include="Scripts\Dagverslagen.js" />
+    <Content Include="Scripts\googleMap.js" />
     <Content Include="Scripts\Menu.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
