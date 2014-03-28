@@ -27,7 +27,7 @@ namespace ItalieNieuw.Migrations
             //    );
             //
 
-            context.Reaction.AddOrUpdate(
+            context.Reactions.AddOrUpdate(
                 r => r.Message,
                 new Models.Reaction
                 {
@@ -42,6 +42,8 @@ namespace ItalieNieuw.Migrations
                     Message = "Zeer mooi!"
                 }
                 );
+
+
 
         }
     }

@@ -20,25 +20,25 @@ namespace ItalieNieuw.Models
 
         public ActionResult Dagverslagen()
         {
-           var query = (from dagv in db.DailyReport select dagv).ToList();
+           var query = (from dagv in db.DailyReports select dagv).ToList();
             return View(query);
         }
 
         public ActionResult GetDagverslag(int id = 0) 
         {
-            var query = (from verslag in db.DailyReport where verslag.Id == id select verslag).ToList();
+            var query = (from verslag in db.DailyReports where verslag.Id == id select verslag).ToList();
             return Json(query, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult Programma()
         {
-            var query = (from dp in db.DailyProgram select dp).ToList();
+            var query = (from dp in db.DailyPrograms select dp).ToList();
             return View(query);
         }
 
         public ActionResult GetDagprogramma(int id = 0) 
         {
-            var query = (from dagp in db.DailyProgram where dagp.Id == id select dagp).ToList();
+            var query = (from dagp in db.DailyPrograms where dagp.Id == id select dagp).ToList();
             return Json(query, JsonRequestBehavior.AllowGet);
         }
 
@@ -63,7 +63,7 @@ namespace ItalieNieuw.Models
 
         public ActionResult Gastenboek()
         {
-            ViewData["Reactions"] = db.Reaction.ToList();
+            ViewData["Reactions"] = db.Reactions.ToList();
             return View();
         }
 
@@ -79,7 +79,7 @@ namespace ItalieNieuw.Models
                 Reaction.Date = DateTime.Now;
                 if (ModelState.IsValid)
                 {
-                    db.Reaction.Add(Reaction);
+                    db.Reactions.Add(Reaction);
                     db.SaveChanges();
                     return RedirectToAction("Gastenboek");
                 }
