@@ -127,26 +127,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201403251806310_ItalieMigratie.cs" />
-    <Compile Include="Migrations\201403251806310_ItalieMigratie.Designer.cs">
-      <DependentUpon>201403251806310_ItalieMigratie.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201403251809335_ItalieMigratie1.cs" />
-    <Compile Include="Migrations\201403251809335_ItalieMigratie1.Designer.cs">
-      <DependentUpon>201403251809335_ItalieMigratie1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201403251812012_ItalieMigratie2.cs" />
-    <Compile Include="Migrations\201403251812012_ItalieMigratie2.Designer.cs">
-      <DependentUpon>201403251812012_ItalieMigratie2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201403251816301_ItalieMigratie3.cs" />
-    <Compile Include="Migrations\201403251816301_ItalieMigratie3.Designer.cs">
-      <DependentUpon>201403251816301_ItalieMigratie3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201403252001386_ItalieMigratie4.cs" />
-    <Compile Include="Migrations\201403252001386_ItalieMigratie4.Designer.cs">
-      <DependentUpon>201403252001386_ItalieMigratie4.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\DailyProgram.cs" />
     <Compile Include="Models\Foto.cs" />
@@ -258,23 +238,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201403251806310_ItalieMigratie.resx">
-      <DependentUpon>201403251806310_ItalieMigratie.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201403251809335_ItalieMigratie1.resx">
-      <DependentUpon>201403251809335_ItalieMigratie1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201403251812012_ItalieMigratie2.resx">
-      <DependentUpon>201403251812012_ItalieMigratie2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201403251816301_ItalieMigratie3.resx">
-      <DependentUpon>201403251816301_ItalieMigratie3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201403252001386_ItalieMigratie4.resx">
-      <DependentUpon>201403252001386_ItalieMigratie4.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
