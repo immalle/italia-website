@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Web
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUploadTest", "FileUploadTest\FileUploadTest.csproj", "{292B0F10-AE08-48FE-BE2A-361B48D0D558}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileUploadTest.Tests", "FileUploadTest.Tests\FileUploadTest.Tests.csproj", "{3E8416DE-6E6D-44DB-9F30-5587E1B0CA84}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,10 +13,6 @@ Global
 		{292B0F10-AE08-48FE-BE2A-361B48D0D558}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{292B0F10-AE08-48FE-BE2A-361B48D0D558}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{292B0F10-AE08-48FE-BE2A-361B48D0D558}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3E8416DE-6E6D-44DB-9F30-5587E1B0CA84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3E8416DE-6E6D-44DB-9F30-5587E1B0CA84}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3E8416DE-6E6D-44DB-9F30-5587E1B0CA84}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3E8416DE-6E6D-44DB-9F30-5587E1B0CA84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
