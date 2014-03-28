@@ -1,18 +1,27 @@
-﻿@using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+﻿@using (Html.BeginForm("UploadFile", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
-    <input type="file" name="file[]" multiple />
+    <input type="file" name="file" />
     <input type="submit" value="OK" />
 }
 
+@using (Html.BeginForm("UploadMultipleFiles", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="files[]" multiple />
+    <input type="submit" value="OK" />
+}
+
+<style>
+    .uploadedpicture {
+        width:200px;
+        height:200px;
+    }
+</style>
 
 <h3>Onze Foto's:</h3>
 
-   
-       <img src="~/ImageUploads/image1.jpg" style="width:200px" height="200" />
-        <img src="~/ImageUploads/image2.jpg" style="width:200px" height="200"/>
-        <img src="~/ImageUploads/image3.jpg" style="width:200px" height="200" />
-        <img src="~/ImageUploads/image4.jpg" style="width:200px" height="200" />
-    
+@foreach(var jpg in ViewBag.jpgFiles) {
+    <img src="@jpg" class="uploadedpicture" />
+}
 
     
 
