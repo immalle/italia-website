@@ -5,12 +5,11 @@ using System.Web;
 
 namespace ItalieNieuw.Models
 {
-    public class Foto
+    public class Picture
     {
         public int Id { get; set; }
-        public String Naam { get; set; }
-        public DateTime UploadDatum { get; set; }
-        public String Pad { get; set; }
-        public String Beschrijving { get; set; } 
+        public DateTime UploatDate { get; set; }
+        public String Path { get; set; }
+        public String Description { get; set; } 
     }
 }
