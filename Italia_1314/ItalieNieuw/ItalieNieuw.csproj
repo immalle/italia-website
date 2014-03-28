@@ -231,6 +231,8 @@
     <Content Include="Views\Italia\Fotos.cshtml" />
     <Content Include="Views\Italia\Gastenboek.cshtml" />
     <Content Include="Views\Italia\Programma.cshtml" />
+    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\Pictures.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

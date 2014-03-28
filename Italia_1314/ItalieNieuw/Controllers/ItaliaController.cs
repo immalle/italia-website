@@ -46,21 +46,7 @@ namespace ItalieNieuw.Models
         {
             return View();
         }
-        [HttpPost]
-        public ActionResult Fotos(HttpPostedFileBase file)
-        {
-            // Verify that the user selected a file
-            if (file != null && file.ContentLength > 0)
-            {
-                // extract only the filename
-                var fileName = Path.GetFileName(file.FileName);
-                // store the file inside the right folder
-                var path = Path.Combine(Server.MapPath("~/Images/ImageUploads/"), fileName);
-                file.SaveAs(path);
-            }
-            return RedirectToAction("Fotos");
-        }
-
+        
         public ActionResult Gastenboek()
         {
             ViewData["Reactions"] = db.Reactions.ToList();
