@@ -26,6 +26,23 @@ namespace ItalieNieuw.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+            context.Reaction.AddOrUpdate(
+                r => r.Message,
+                new Models.Reaction
+                {
+                    Name = "Jos",
+                    Date = new DateTime(2014, 3, 28, 12, 00, 00),
+                    Message = "Mooi!"
+                },
+                new Models.Reaction
+                {
+                    Name = "Willy",
+                    Date = new DateTime(2014, 3, 28, 12, 5, 00),
+                    Message = "Zeer mooi!"
+                }
+                );
+
         }
     }
 }
