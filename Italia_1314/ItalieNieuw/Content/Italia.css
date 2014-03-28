@@ -116,6 +116,14 @@ nav {
     text-align: center;
 }
 
+<<<<<<< HEAD
+
+    #tblReisschema td{
+        border-bottom: 1px dashed grey;
+        text-align:center; 
+        vertical-align:middle;
+=======
+>>>>>>> b6beef63d21f085150cbe11efbba7e71df331fe1
 
     #tblReisschema td {
         border-bottom: 1px dashed grey;
@@ -126,6 +134,17 @@ nav {
     #tblReisschema b {
         font-style: italic;
     }
+<<<<<<< HEAD
+#Gastenboektabel {
+font-family:'Titillium Web', sans-serif;
+}
+#Gastenboektabel td {
+width:250px;
+}
+textarea {
+width:1021px;
+height:101px;
+=======
 
 #Gastenboektabel {
     font-family: 'Titillium Web', sans-serif;
@@ -142,4 +161,5 @@ textarea {
 
 .bold {
     font-weight: bold;
+>>>>>>> b6beef63d21f085150cbe11efbba7e71df331fe1
 }
