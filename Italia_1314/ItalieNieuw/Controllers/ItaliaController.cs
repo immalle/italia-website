@@ -54,6 +54,7 @@ namespace ItalieNieuw.Models
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult AddReaction(Reaction Reaction)
         {
             if (Reaction.Name == null)
