@@ -1,0 +1,51 @@
+﻿@model ItalieNieuw.Models.Picture
+
+@{
+    ViewBag.Title = "DeletePicture";
+}
+
+<h2>DeletePicture</h2>
+
+<p>De file zal blijven staan in de map Image/ImageUploads. Ze kan eventueel via FTP worden weggehaald.</p>
+<p>Dit verwijdert dus enkel de verwijzing naar de foto uit de database. Nadien kan de foto niet meer via de web-interface benaderd worden!</p>
+
+<h3>Are you sure you want to delete this?</h3>
+
+<fieldset>
+    <legend>Picture</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Id)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Id)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FileName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FileName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

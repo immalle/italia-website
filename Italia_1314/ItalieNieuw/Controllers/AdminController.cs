@@ -29,6 +29,7 @@ namespace ItalieNieuw.Controllers
         public ActionResult Pictures()
         {
             var query = (from p in db.Pictures
+                         orderby p.Date descending
                          select p).ToList();
 
             return View(query);
@@ -74,6 +75,27 @@ namespace ItalieNieuw.Controllers
             }
             return View(picture);
         }
+
+        public ActionResult DeletePicture(int id = 0)
+        {
+            Picture pic = db.Pictures.Find(id);
+            if (pic == null)
+            {
+                return HttpNotFound();
+            }
+            return View(pic);
+        }
+
+        [HttpPost, ActionName("DeletePicture")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeletePictureConfirmed(int id)
+        {
+            Picture pic = db.Pictures.Find(id);
+            db.Pictures.Remove(pic);
+            db.SaveChanges();
+            return RedirectToAction("Pictures");
+        }
+
 
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)

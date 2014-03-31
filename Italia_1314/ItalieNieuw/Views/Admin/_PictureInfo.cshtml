@@ -11,7 +11,7 @@
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>Picture: @Model.FileName</legend>
+        <legend>Picture: @Model.FileName - Id: @Model.Id</legend>
 
         @Html.HiddenFor(model => model.Id)
         @Html.HiddenFor(model => model.FileName)
@@ -36,7 +36,16 @@
 
         <p>
             <input type="submit" value="Save" />
+            @Html.ActionLink("Delete from database", "DeletePicture", "Admin", new { id = Model.Id }, new object { })
         </p>
+
+        @*
+        @using (@Html.BeginForm("DeletePicture", "Admin", FormMethod.Post))
+        {
+            @Html.HiddenFor(model => model.Id)
+            <input type="submit" value="Delete from database (not from disk)" />
+        }
+        *@
     </fieldset>
 }
 
