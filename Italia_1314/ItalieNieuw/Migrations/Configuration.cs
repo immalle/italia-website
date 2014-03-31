@@ -4,6 +4,8 @@ namespace ItalieNieuw.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using System.Web.Security;
+    using WebMatrix.WebData;
 
     internal sealed class Configuration : DbMigrationsConfiguration<ItalieNieuw.Models.ItaliaDb>
     {
@@ -124,6 +126,16 @@ namespace ItalieNieuw.Migrations
                 }
                 );
 
+
+            WebSecurity.InitializeDatabaseConnection("DefaultConnection", "UserProfile", "UserId", "UserName", autoCreateTables: true);
+
+            var roles = (SimpleRoleProvider)Roles.Provider;
+            var membership = (SimpleMembershipProvider)Membership.Provider;
+
+            if (membership.GetUser("admin", false) == null)
+            {
+                membership.CreateUserAndAccount("admin", "admin");
+            }
 
         }
     }

@@ -15,7 +15,17 @@
 <body>
         <header id="wrapHeader">
         <div id="menu">
-            <div id="title">IMMACULATA</div>
+            @if (Request.IsAuthenticated)
+            {
+                <div id="title">ADMINISTRATOR</div>
+                    using (Html.BeginForm("LogOff", "Admin", FormMethod.Post, new { id = "logoutForm" }))
+                    {
+                        @Html.AntiForgeryToken()
+                        <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+                    }
+            } else {
+                <div id="title">IMMACULATA</div>
+            }
             <nav>
                 <ul id="menuList">
                     <li class="@(@ViewContext.RouteData.GetRequiredString("action") == "Index" ? "current_page" : "")">@Html.ActionLink("Home", "Index", "Italia")</li>

@@ -27,6 +27,8 @@ namespace ItalieNieuw
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/Italia.css"));
+            bundles.Add(new StyleBundle("~/Content/admincss").Include("~/Content/Admin.css"));
+
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
