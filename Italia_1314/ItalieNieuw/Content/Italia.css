@@ -4,6 +4,7 @@
     width: 1024px;
     background-color: #d3d3d3;
     overflow: scroll;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 a, a:visited, a:hover {
@@ -132,15 +133,50 @@ nav {
         font-style: italic;
     }
 
-#Gastenboektabel {
-font-family:'Titillium Web', sans-serif;
+#gastenboekformulier {
+    margin-top: 10px;
+    border: solid 2px;
+    background-color: #bbbbbb;
+    padding: 2px 10px;
 }
-#Gastenboektabel td {
-width:250px;
-}
-textarea {
-    width: 1021px;
+
+#gastenboekformulier textarea {
+    width: 800px;
     height: 101px;
+}
+
+
+#gastenboek {
+    margin-top:10px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #eeeeee;
+}
+
+.gastenboekentry {
+    border: solid 2px;
+    margin-top: 2px;
+    
+}
+
+.gastenboekentry_hoofding {
+    
+    width:100%;
+    background-color: #555555;
+    color: #ffffff;
+}
+
+    .gastenboekentry_hoofding .naam {
+        padding-left: 10px;
+    }
+
+    .gastenboekentry_hoofding .datum {
+        float: right;
+        padding-right: 10px;
+    }
+
+.gastenboekentry_bericht {
+    background-color:#aaaaaa;
+    padding: 2px 20px;
 }
 
 #Gastenboektabel {
@@ -148,7 +184,8 @@ textarea {
 }
 
     #Gastenboektabel td {
-        width: 250px;
+        width: 100%;
+
     }
 
 textarea {

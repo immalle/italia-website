@@ -3,29 +3,28 @@
     ViewBag.Title = "Gastenboek";
 }
 
-<table id="Gastenboektabel">
-    <thead>
-        <tr>
-            <td style="text-decoration: underline;">Naam</td>
-            <td style="text-decoration: underline;">Bericht</td>
-            <td style="text-decoration: underline;">Datum</td>
-        </tr>
-    </thead>
-    <tbody>
+@using (@Html.BeginForm("AddReaction", "Italia", FormMethod.Post, new { id = "gastenboekformulier"})) {
+    <div>
+        <div>@Html.LabelFor(model => model.Name)</div>
+        <div>@Html.EditorFor(model => model.Name)</div>
+    </div>
+    <div>
+        <div>@Html.LabelFor(model => model.Message)</div>
+        <div>@Html.TextAreaFor(model => model.Message)</div>
+    </div>
+        <input type="submit" value="Voeg toe" />
+}
+
+<div id="gastenboek">
 @foreach (var item in (List<ItalieNieuw.Models.Reaction>)ViewData["Reactions"])
 {
-    <tr>
-        <td>@item.Name</td>
-        <td>@item.Message</td>
-        <td>@item.Date</td>
-    </tr>
+    <div class="gastenboekentry">
+        <div class="gastenboekentry_hoofding">
+            <span class="naam">@item.Name</span>
+            <span class="datum">@item.Date</span>
+        </div>
+        <div class="gastenboekentry_bericht">@item.Message</div>
+    </div>
 }
-</tbody>
-</table>
+</div>
 
-@using (@Html.BeginForm("AddReaction", "Italia", FormMethod.Post)) {
-<div>@Html.LabelFor(model => model.Name)</div>
-<div>@Html.EditorFor(model => model.Name)</div>
-<div>@Html.LabelFor(model => model.Message)</div>
-<div>@Html.TextAreaFor(model => model.Message)</div>
-<input type="submit" value="Voeg toe" />}
