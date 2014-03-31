@@ -1,0 +1,42 @@
+﻿@model ItalieNieuw.Models.Picture
+
+@{
+var fullpath = "../Images/ImageUploads/" + Model.FileName;
+<img src="@fullpath" class="picturecss" />
+}
+
+<div class="picturedescriptioncss">
+    @Html.DisplayFor(model => model.Description)
+</div>
+
+@*
+<fieldset>
+    <legend>Picture</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.FileName)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.FileName)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+*@

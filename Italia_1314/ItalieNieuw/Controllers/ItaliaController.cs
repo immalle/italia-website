@@ -7,6 +7,11 @@ using System.Web.Mvc;
 
 namespace ItalieNieuw.Models
 {
+    public class FotosViewModel
+    {
+        public DateTime Date { get; set; }
+    }
+
     public class ItaliaController : Controller
     {
         ItaliaDb db = new ItaliaDb();
@@ -44,7 +49,39 @@ namespace ItalieNieuw.Models
 
         public ActionResult Fotos()
         {
-            return View();
+            /*
+            // this gives "Only parameterless constructors and initializers are supported in LINQ to Entities." error
+            var queryByDay = (from pic in db.Pictures
+                              group pic 
+                              by new { Date = new DateTime(pic.Date.Year, pic.Date.Month, pic.Date.Day) }
+                              into picgroup
+                              orderby picgroup ascending
+                              select picgroup
+                              );
+              */                                  
+            
+            // first make a list with all picture where the time is stripped from the date
+            var stripped = (from pic in db.Pictures
+                            select pic
+                            ).ToList();
+
+            foreach (var pic in stripped)
+            {
+                pic.Date = new DateTime(pic.Date.Year, pic.Date.Month, pic.Date.Day);
+            }
+
+            // now we can use orderby to sort by day, ignorning time
+            var byday = (from pic in stripped
+                         group pic
+                         by pic.Date
+                         /*
+                             into picgroup
+                             orderby picgroup.Key ascending
+                             select picgroup
+                          */
+                        );
+
+            return View(byday);
         }
         
         public ActionResult Gastenboek()

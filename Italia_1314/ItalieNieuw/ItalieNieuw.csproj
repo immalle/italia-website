@@ -252,6 +252,7 @@
     <Content Include="Views\Reaction\Delete.cshtml" />
     <Content Include="Views\Admin\_PictureInfo.cshtml" />
     <Content Include="Views\Admin\DeletePicture.cshtml" />
+    <Content Include="Views\Italia\_Picture.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
