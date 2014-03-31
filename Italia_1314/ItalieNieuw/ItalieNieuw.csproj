@@ -130,6 +130,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\ItaliaController.cs" />
+    <Compile Include="Controllers\ReactionController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -244,6 +245,11 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\Pictures.cshtml" />
     <Content Include="Views\Admin\Login.cshtml" />
+    <Content Include="Views\Reaction\Index.cshtml" />
+    <Content Include="Views\Reaction\Details.cshtml" />
+    <Content Include="Views\Reaction\Create.cshtml" />
+    <Content Include="Views\Reaction\Edit.cshtml" />
+    <Content Include="Views\Reaction\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
