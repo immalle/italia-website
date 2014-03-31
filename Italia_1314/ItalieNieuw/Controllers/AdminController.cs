@@ -14,6 +14,9 @@ namespace ItalieNieuw.Controllers
     [Authorize]
     public class AdminController : Controller
     {
+
+        ItaliaDb db = new ItaliaDb();
+
         //
         // GET: /Admin/
 
@@ -24,23 +27,36 @@ namespace ItalieNieuw.Controllers
 
         public ActionResult Pictures()
         {
+            ViewBag.Pictures = db.Pictures.ToList<Picture>();
+
             return View();
         }
 
         [HttpPost]
-        public ActionResult UploadPictures(HttpPostedFileBase file)
+        public ActionResult UploadPicture(HttpPostedFileBase file)
         {
             // Verify that the user selected a file
             if (file != null && file.ContentLength > 0)
             {
                 // extract only the filename
                 var fileName = Path.GetFileName(file.FileName);
+                var extension = Path.GetExtension(file.FileName);
+
+                var newPicture = new Models.Picture();
+                newPicture.Date = DateTime.Now;
+                newPicture.FileName = DateTime.Now.ToString("yyyyMMddHHmmss") + extension;
+                newPicture.Description = "";
+
                 // store the file inside the right folder
-                var path = Path.Combine(Server.MapPath("~/Images/ImageUploads/"), fileName);
+                var path = Path.Combine(Server.MapPath("~/Images/ImageUploads/"), newPicture.FileName);
+
                 file.SaveAs(path);
+
+                db.Pictures.Add(newPicture);
+                db.SaveChanges();
             }
             //return RedirectToAction("UploadPictures");
-            return View();
+            return RedirectToAction("Pictures");
         }
 
 

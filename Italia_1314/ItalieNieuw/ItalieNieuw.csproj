@@ -136,7 +136,7 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\DailyProgram.cs" />
-    <Compile Include="Models\Foto.cs" />
+    <Compile Include="Models\Picture.cs" />
     <Compile Include="Models\DailyReport.cs" />
     <Compile Include="Models\ItaliaDb.cs" />
     <Compile Include="Models\Reaction.cs" />

@@ -2,6 +2,25 @@
     ViewBag.Title = "Pictures (Administrator)";
 }
 
+<h2>Upload picture</h2>
+
+@using (Html.BeginForm("UploadPicture", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <input type="file" name="file" />
+    <input type="submit" value="OK" />
+}
+
 <h2>Pictures</h2>
 
-@Html.ActionLink("Upload Picture(s)", "UploadPicture");
+<style>
+    .uploadedpicture {
+        width:266px;
+        height:200px;
+    }
+</style>
+
+
+@foreach(var pic in ViewBag.Pictures) {
+    var fullpath = "../Images/ImageUploads/" + @pic.FileName;
+    <img src="@fullpath" class="uploadedpicture" />
+}
