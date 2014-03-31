@@ -250,6 +250,7 @@
     <Content Include="Views\Reaction\Create.cshtml" />
     <Content Include="Views\Reaction\Edit.cshtml" />
     <Content Include="Views\Reaction\Delete.cshtml" />
+    <Content Include="Views\Admin\_PictureInfo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

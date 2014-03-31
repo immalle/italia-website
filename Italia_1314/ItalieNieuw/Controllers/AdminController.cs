@@ -8,6 +8,7 @@ using System.Web.Mvc;
 using System.Web.Security;
 using WebMatrix.WebData;
 using ItalieNieuw.Models;
+using System.Data;
 
 namespace ItalieNieuw.Controllers
 {
@@ -27,9 +28,10 @@ namespace ItalieNieuw.Controllers
 
         public ActionResult Pictures()
         {
-            ViewBag.Pictures = db.Pictures.ToList<Picture>();
+            var query = (from p in db.Pictures
+                         select p).ToList();
 
-            return View();
+            return View(query);
         }
 
         [HttpPost]
@@ -60,7 +62,18 @@ namespace ItalieNieuw.Controllers
         }
 
 
-
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditPicture(Picture picture)
+        {
+            if (ModelState.IsValid)
+            {
+                db.Entry(picture).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("Pictures");
+            }
+            return View(picture);
+        }
 
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)

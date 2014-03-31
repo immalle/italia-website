@@ -9,6 +9,7 @@ using ItalieNieuw.Models;
 
 namespace ItalieNieuw.Controllers
 {
+    [Authorize]
     public class ReactionController : Controller
     {
         private ItaliaDb db = new ItaliaDb();
