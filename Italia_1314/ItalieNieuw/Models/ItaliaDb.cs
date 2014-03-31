@@ -10,7 +10,7 @@ namespace ItalieNieuw.Models
     {
         public ItaliaDb() : base("DefaultConnection")
         {
-            Database.SetInitializer<ItaliaDb>(new DropCreateDatabaseAlways<ItaliaDb>());
+            //Database.SetInitializer<ItaliaDb>(new DropCreateDatabaseAlways<ItaliaDb>());
         }
 
         public DbSet<Reaction> Reactions { get; set; }
