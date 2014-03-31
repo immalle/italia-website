@@ -12,6 +12,7 @@ namespace ItalieNieuw.Models
         [Display(Name = "Naam")]
         public string Name { get; set; }
         [Display(Name = "Bericht")]
+        [DataType(DataType.MultilineText)]
         public string Message { get; set; }
         public DateTime Date { get; set; }
     }
