@@ -17,12 +17,16 @@
         <div id="menu">
             @if (Request.IsAuthenticated)
             {
-                <div id="title">ADMINISTRATOR</div>
-                    using (Html.BeginForm("LogOff", "Admin", FormMethod.Post, new { id = "logoutForm" }))
+                <div id="title">
+                    @Html.ActionLink("ADMINISTRATOR", "Index", "Admin")
+                </div>
+                <div>
+                    @using (Html.BeginForm("LogOff", "Admin", FormMethod.Post, new { id = "logoutForm" }))
                     {
                         @Html.AntiForgeryToken()
                         <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
                     }
+                </div>
             } else {
                 <div id="title">IMMACULATA</div>
             }
