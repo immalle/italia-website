@@ -129,6 +129,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\DailyReportController.cs" />
     <Compile Include="Controllers\ItaliaController.cs" />
     <Compile Include="Controllers\ReactionController.cs" />
     <Compile Include="Global.asax.cs">
@@ -253,6 +254,12 @@
     <Content Include="Views\Admin\_PictureInfo.cshtml" />
     <Content Include="Views\Admin\DeletePicture.cshtml" />
     <Content Include="Views\Italia\_Picture.cshtml" />
+    <Content Include="Views\DailyReport\Index.cshtml" />
+    <Content Include="Views\DailyReport\Details.cshtml" />
+    <Content Include="Views\DailyReport\Create.cshtml" />
+    <Content Include="Views\DailyReport\Edit.cshtml" />
+    <Content Include="Views\DailyReport\Delete.cshtml" />
+    <Content Include="Views\DailyReport\_DailyReport.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -3,30 +3,8 @@
     ViewBag.Title = "Dagverslagen";
 }
 
-@Scripts.Render("~/bundles/dagverslag")
-<h2>Dagverslagen</h2>
-
-
-<div>
-    <table id="dagverslagenTabel">
-        <thead>
-            <tr>
-                <td>Titel</td>
-                <td>Datum</td>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td class="title" data-it-action="@Url.Action("GetDagverslag")" data-it-id="@item.Id">@item.Title</td>
-                    <td>@item.Date</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-    <div id="dagDetails">
-
-    </div>
-</div>
+@foreach (var item in Model)
+{
+    <h2>@item.Date.ToShortDateString()</h2>
+    <div>@Html.Raw(item.Report)</div>
+}
