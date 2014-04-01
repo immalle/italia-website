@@ -135,6 +135,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Content Include="Images\ImageUploads\files.txt" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\DailyProgram.cs" />
@@ -496,10 +497,10 @@
     <Content Include="Views\DailyReport\Edit.cshtml" />
     <Content Include="Views\DailyReport\Delete.cshtml" />
     <Content Include="Views\DailyReport\_DailyReport.cshtml" />
+    <Content Include="Views\Italia\_GastenboekEntryCreate.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\ImageUploads\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>

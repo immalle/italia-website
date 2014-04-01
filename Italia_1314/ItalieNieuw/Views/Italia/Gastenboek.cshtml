@@ -1,23 +1,12 @@
-﻿@model ItalieNieuw.Models.Reaction
+﻿@model IList<ItalieNieuw.Models.Reaction>
 @{
     ViewBag.Title = "Gastenboek";
 }
 
-@using (@Html.BeginForm("AddReaction", "Italia", FormMethod.Post, new { id = "gastenboekformulier"})) {
-    @Html.AntiForgeryToken()
-    <div>
-        <div>@Html.LabelFor(model => model.Name)</div>
-        <div>@Html.EditorFor(model => model.Name)</div>
-    </div>
-    <div>
-        <div>@Html.LabelFor(model => model.Message)</div>
-        <div>@Html.TextAreaFor(model => model.Message)</div>
-    </div>
-        <input type="submit" value="Voeg toe" />
-}
+@Html.Partial("_GastenboekEntryCreate", new ItalieNieuw.Models.Reaction())
 
 <div id="gastenboek">
-@foreach (var item in (List<ItalieNieuw.Models.Reaction>)ViewData["Reactions"])
+@foreach (var item in Model)
 {
     <div class="gastenboekentry">
         <div class="gastenboekentry_hoofding">
@@ -28,4 +17,3 @@
     </div>
 }
 </div>
-

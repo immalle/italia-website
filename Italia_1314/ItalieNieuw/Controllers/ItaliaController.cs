@@ -86,8 +86,10 @@ namespace ItalieNieuw.Models
         
         public ActionResult Gastenboek()
         {
-            ViewData["Reactions"] = db.Reactions.ToList();
-            return View();
+            var query = (from entry in db.Reactions
+                         orderby entry.Date descending
+                         select entry).ToList();
+            return View(query);
         }
 
         [HttpPost]

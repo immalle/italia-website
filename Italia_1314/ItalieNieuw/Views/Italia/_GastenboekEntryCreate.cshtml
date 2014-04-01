@@ -1,0 +1,14 @@
+﻿@model ItalieNieuw.Models.Reaction
+
+@using (@Html.BeginForm("AddReaction", "Italia", FormMethod.Post, new { id = "gastenboekformulier"})) {
+    @Html.AntiForgeryToken()
+    <div>
+        <div>@Html.LabelFor(model => model.Name)</div>
+        <div>@Html.EditorFor(model => model.Name)</div>
+    </div>
+    <div>
+        <div>@Html.LabelFor(model => model.Message)</div>
+        <div>@Html.TextAreaFor(model => model.Message)</div>
+    </div>
+        <input type="submit" value="Voeg toe" />
+}
