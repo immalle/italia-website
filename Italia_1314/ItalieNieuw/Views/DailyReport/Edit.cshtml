@@ -6,7 +6,10 @@
 
 <h2>Edit</h2>
 
-@using (Html.BeginForm()) {
+<script src="~/Scripts/CKEditor/ckeditor.js"></script>
+
+@using (Html.BeginForm())
+{
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
 
@@ -30,6 +33,13 @@
             @Html.EditorFor(model => model.Report)
             @Html.ValidationMessageFor(model => model.Report)
         </div>
+
+        <script type="text/javascript">
+            CKEDITOR.replace('Report', {
+                "extraPlugins": "imagebrowser",
+                "imageBrowser_listUrl": "/DailyReport/GetPicturesAsJson"
+                });
+        </script>
 
         <p>
             <input type="submit" value="Save" />

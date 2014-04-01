@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ItalieNieuw.Models;
+using System.IO;
 
 namespace ItalieNieuw.Controllers
 {
@@ -13,6 +14,31 @@ namespace ItalieNieuw.Controllers
     public class DailyReportController : Controller
     {
         private ItaliaDb db = new ItaliaDb();
+
+        // for use with CKEditor's imagebrowser plugin
+        // which requires all the pictures on the server as JSON
+        class JsonPic
+        {
+            public string image { get; set; }
+            //public string thumb { get; set; }
+            //public string folder { get; set; }
+        };
+
+        public ActionResult GetPicturesAsJson()
+        {
+            var pics = (from p in db.Pictures
+                        select p
+                           ).ToList();
+
+            var jsonpics = new List<JsonPic>();
+            foreach (var pic in pics)
+            {
+                jsonpics.Add(new JsonPic { image = Url.Content("~/Images/ImageUploads/") + pic.FileName });
+            }
+
+            return Json(jsonpics, JsonRequestBehavior.AllowGet);
+        }
+
 
         //
         // GET: /DailyReport/
