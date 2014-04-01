@@ -435,6 +435,7 @@
     <Content Include="Scripts\CKEditor\skins\moono\images\lock-open.png" />
     <Content Include="Scripts\CKEditor\skins\moono\images\lock.png" />
     <Content Include="Scripts\CKEditor\skins\moono\images\refresh.png" />
+    <Content Include="Scripts\CKEditor\styles.js" />
     <Content Include="Scripts\Dagverslagen.js" />
     <Content Include="Scripts\googleMap.js" />
     <Content Include="Scripts\Menu.js" />
@@ -492,7 +493,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Images\ImageUploads\" />
-    <Folder Include="Properties\PublishProfiles\" />
     <Folder Include="Views\Account\" />
   </ItemGroup>
   <ItemGroup>
