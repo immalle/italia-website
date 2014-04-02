@@ -196,3 +196,8 @@ textarea {
 .bold {
     font-weight: bold;
 }
+
+
+.picturecss {
+    max-width: 100%;
+}
